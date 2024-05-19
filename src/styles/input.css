@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*Criando a classe container que aplica padding de 220px*/
+.containerF{
+  @apply px-[220px]
+}
+/*Criando a classe que aplica uma largura e altura para os icones*/
+.icon{
+  @apply w-auto h-[35px] min-h-[35px] min-w-[30px]
+}
+/*Criando o estilo dos itens*/
+.item{
+  @apply text-[#0049A6] bg-[#FFF6DF] font-bold rounded-lg h-[60px] items-center flex justify-center w-[33%] hover:text-[#FFF6DF] hover:bg-[#0049A6] cursor-pointer
+}
+
+.swiper {
+
+}
+.s1{
+  margin-top: 5rem;
+  width: 100%;
+  border-radius: 40px;
+} 
