@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bichanos</title>
+  <link rel="stylesheet" href="../styles/output.css">
+  <link rel="stylesheet" href="../styles/input.css">
+  <link rel="stylesheet" href="../styles/carrossel.css">
+  <link
+  rel="stylesheet"
+  href="../../node_modules/swiper/swiper-bundle.css"
+/>
+</head>
+
+<body>
+  <!--HEADER-->
+  <header class="w-full border-b-4 p-6 flex-col gap-7 flex containerF">
+    <!--LOGO + BARRA DE PESQUISA-->
+    <div class="w-full flex items-center gap-12 mt-5">
+      <img src="../../assets/logo.png" alt="" class="w-[226px] h-[78px]">
+      <!--BARRA DE PESQUISA-->
+      <div class="h-[60px] w-full flex items-center border-2 border-black rounded-md bg-white gap-3 px-[2rem]">
+        <img src="../../assets/icons/search.png" alt="" class="icon min-w-[35px]">
+        <input type="text" class="h-full w-full focus:outline-none text-[1.3rem]"
+          placeholder="O que seu bichano precisa?">
+      </div>
+    </div>
+    <!--FIM LOGO + BARRA DE PESQUISA-->
+
+    <!--NavLinks + Contatos-->
+    <nav class="w-full flex items-center justify-between ">
+      <ul class="flex gap-14 text-2xl font-medium">
+        <li><a href="#">Cachorro</a></li>
+        <li><a href="#">Gato</a></li>
+        <li><a href="#">Plano Bichanos</a></li>
+        <li><a href="#">Sobre nós</a></li>
+      </ul>
+
+      <ul class="flex items-center gap-12 font-bold">
+        <li><a href=""><img src="../../assets/icons/Phone.png" alt="" class="icon"></a></li>
+        <li><a href=""><img src="../../assets/icons/Favorite.png" alt="" class="icon"></a></li>
+        <li><a href=""><img src="../../assets/icons/cesta.png" alt="" class="icon"></a></li>
+
+        <li><a href="">Login</a></li>
+      </ul>
+      <!--FIM NavLinks + Contatos-->
+  </header>
+  <!--FIM HEADER-->
+  <main class="containerF w-full h-5">
+
+    <section class="justify-center w-full flex gap-12 mt-12 ">
+      <li class="item"><a href="#">Cachorro</a></li>
+      <li class="item"><a href="#">Gato</a></li>
+      <li class="item"><a href="#">Plano Bichanos</a></li>
+      <li class="item"><a href="#">Sobre nós</a></li>
+    </section>
+
+    <!--CARROSSEL-->
+<!-- Slider main container -->
+<div class="swiper s1">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><img src="../../assets/Banner.png" alt=""></div>
+    <div class="swiper-slide"><img src="../../assets/Banner.png" alt=""></div>
+    <div class="swiper-slide"><img src="../../assets/Banner.png" alt=""></div>
+  </div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+</div>
+    <!--FIM CARROSSEL-->
+
+    <p class="mt-[5rem] text-3xl font-bold">Mais vendidos</p>
+
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="../../assets/Banner.png" alt=""></div>
+        <div class="swiper-slide"><img src="../../assets/Banner.png" alt=""></div>
+        <div class="swiper-slide"><img src="../../assets/Banner.png" alt=""></div>
+      </div>
+
+    </div>
+
+
+  </main>
+</body>
+<!--COLOCANDO O SCRIPT DOS ÍCONES-->
+<script src="https://kit.fontawesome.com/1b8606bd84.js" crossorigin="anonymous"></script>
+<!--COLOCANDO O SCRIPT DO CARROSSEL-->
+<script src="../../node_modules/swiper/swiper-bundle.js"></script>
+<script src="../scripts/carrossel.js"></script>
+</html>
