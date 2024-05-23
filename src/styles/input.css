@@ -15,11 +15,22 @@
   @apply text-[#0049A6] bg-[#FFF6DF] font-bold rounded-lg h-[60px] items-center flex justify-center w-[33%] hover:text-[#FFF6DF] hover:bg-[#0049A6] cursor-pointer
 }
 
-.swiper {
 
-}
-.s1{
+#swiper1{
   margin-top: 5rem;
   width: 100%;
   border-radius: 40px;
 } 
+#swiper2{
+  margin-top: 5rem;
+  width: 100%;
+}
+#swiper2 .swiper-slide img{
+  text-align: center;
+  width: 100%;
+  /* Centralizar o conteúdo do slide */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+}

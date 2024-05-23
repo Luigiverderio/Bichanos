@@ -8,10 +8,7 @@
   <link rel="stylesheet" href="../styles/output.css">
   <link rel="stylesheet" href="../styles/input.css">
   <link rel="stylesheet" href="../styles/carrossel.css">
-  <link
-  rel="stylesheet"
-  href="../../node_modules/swiper/swiper-bundle.css"
-/>
+  <link rel="stylesheet" href="../../node_modules/swiper/swiper-bundle.css" />
 </head>
 
 <body>
@@ -58,33 +55,46 @@
     </section>
 
     <!--CARROSSEL-->
-<!-- Slider main container -->
-<div class="swiper s1">
-  <!-- Additional required wrapper -->
-  <div class="swiper-wrapper">
-    <!-- Slides -->
-    <div class="swiper-slide"><img src="../../assets/Banner.png" alt=""></div>
-    <div class="swiper-slide"><img src="../../assets/Banner.png" alt=""></div>
-    <div class="swiper-slide"><img src="../../assets/Banner.png" alt=""></div>
-  </div>
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-
-</div>
-    <!--FIM CARROSSEL-->
-
-    <p class="mt-[5rem] text-3xl font-bold">Mais vendidos</p>
-
-    <div class="swiper">
-      <!-- Additional required wrapper -->
+    <!-- Slider main container -->
+    <div class="swiper" id="swiper1">
       <div class="swiper-wrapper">
         <!-- Slides -->
         <div class="swiper-slide"><img src="../../assets/Banner.png" alt=""></div>
         <div class="swiper-slide"><img src="../../assets/Banner.png" alt=""></div>
         <div class="swiper-slide"><img src="../../assets/Banner.png" alt=""></div>
-      </div>
 
+        <!-- Adicione mais slides conforme necessário -->
+      </div>
+      
+      <!-- Paginação -->
+      <div class="swiper-pagination"></div>
+      
+      <!-- Botões de navegação -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
     </div>
+    <!--FIM CARROSSEL-->
+    
+    <p class="mt-[5rem] text-3xl font-bold">Mais vendidos</p>
+    <!--CARROSSEL-->
+    <!-- Slider main container -->
+    <div class="swiper" id="swiper2">
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="../../assets/produtos/produto (1).png" alt=""></div>
+        <div class="swiper-slide"><img src="../../assets/produtos/produto (2).png" alt=""></div>
+        <div class="swiper-slide"><img src="../../assets/produtos/produto (3).png" alt=""></div>
+        <div class="swiper-slide"><img src="../../assets/produtos/produto (4).png" alt=""></div>
+
+
+        <!-- Adicione mais slides conforme necessário -->
+      </div>
+    
+      <!-- Botões de navegação -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>  
+    </div>
+    <!--FIM CARROSSEL-->
 
 
   </main>
@@ -94,4 +104,5 @@
 <!--COLOCANDO O SCRIPT DO CARROSSEL-->
 <script src="../../node_modules/swiper/swiper-bundle.js"></script>
 <script src="../scripts/carrossel.js"></script>
+
 </html>
