@@ -588,12 +588,20 @@ video {
   }
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
 .mt-12 {
   margin-top: 3rem;
 }
 
-.mt-5 {
-  margin-top: 1.25rem;
+.mt-4 {
+  margin-top: 1rem;
 }
 
 .mt-\[5rem\] {
@@ -604,24 +612,32 @@ video {
   display: flex;
 }
 
-.h-5 {
-  height: 1.25rem;
+.h-8 {
+  height: 2rem;
 }
 
-.h-\[60px\] {
-  height: 60px;
+.h-\[50px\] {
+  height: 50px;
 }
 
-.h-\[78px\] {
-  height: 78px;
+.h-\[70px\] {
+  height: 70px;
 }
 
 .h-full {
   height: 100%;
 }
 
-.w-\[226px\] {
-  width: 226px;
+.w-24 {
+  width: 6rem;
+}
+
+.w-8 {
+  width: 2rem;
+}
+
+.w-\[200px\] {
+  width: 200px;
 }
 
 .w-full {
@@ -660,8 +676,12 @@ video {
   gap: 0.75rem;
 }
 
-.gap-7 {
-  gap: 1.75rem;
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-10 {
+  gap: 2.5rem;
 }
 
 .rounded-md {
@@ -676,9 +696,18 @@ video {
   border-bottom-width: 4px;
 }
 
-.border-black {
+.border-t-4 {
+  border-top-width: 4px;
+}
+
+.border-blue-700 {
   --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+  border-color: rgb(29 78 216 / var(--tw-border-opacity));
+}
+
+.border-gray-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(156 163 175 / var(--tw-border-opacity));
 }
 
 .bg-red-900 {
@@ -691,6 +720,10 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.p-5 {
+  padding: 1.25rem;
+}
+
 .p-6 {
   padding: 1.5rem;
 }
@@ -700,9 +733,8 @@ video {
   padding-right: 2rem;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
+.font-lato {
+  font-family: Lato, sans-serif;
 }
 
 .text-3xl {
@@ -712,6 +744,15 @@ video {
 
 .text-\[1\.3rem\] {
   font-size: 1.3rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-\[1\.1rem\] {
+  font-size: 1.1rem;
 }
 
 .font-bold {
@@ -768,16 +809,28 @@ video {
   color: rgb(255 246 223 / var(--tw-text-opacity));
 }
 
-.swiper {
-}
-
-.s1{
+#swiper1{
   margin-top: 5rem;
   width: 100%;
   border-radius: 40px;
 }
 
+#swiper2{
+  margin-top: 5rem;
+  width: 100%;
+}
+
+#swiper2 .swiper-slide img{
+  text-align: center;
+  width: 100%;
+  /* Centralizar o conteúdo do slide */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+}
+
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
-} 
+}
