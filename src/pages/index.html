@@ -18,7 +18,7 @@
     <div class="w-full flex items-center gap-12 mt-5">
       <img src="../../assets/logo.png" alt="" class="w-[226px] h-[78px]">
       <!--BARRA DE PESQUISA-->
-      <div class="h-[60px] w-full flex items-center border-2 border-black rounded-md bg-white gap-3 px-[2rem]">
+      <div class="h-[60px] w-full flex items-center border-2 border-black rounded-md bg-white gap-3 px-[1rem]">
         <img src="../../assets/icons/search.png" alt="" class="icon min-w-[35px]">
         <input type="text" class="h-full w-full focus:outline-none text-[1.3rem]"
           placeholder="O que seu bichano precisa?">
@@ -173,23 +173,26 @@
       <div class="swiper-button-next"></div>
     </div>
     <!--FIM CARROSSEL PRODUTOS-->
-    <section class="w-full h-[15rem] flex justify-around mt-[10rem]">
+    <section class="w-full h-[15rem] flex justify-around my-[10rem]">
       <div class="h-[15rem] w-[15rem] border rounded-full"><img src="../../assets/dog.png" alt="" class="w-full h-full"></div>
       <div class="h-[15rem] w-[15rem] border rounded-full"><img src="../../assets/cat.png" alt="" class="w-full h-full"></div>
     </section>
 
-    <div class="form-container w-3/4 mx-auto h-[12rem] bg-[#FFF6DF] rounded-2xl">
-      <p></p>
-      <form>
-        <input type="text" placeholder="Seu email" class="p-4 rounded-md">
-        <select id="pet-select">
-          <option value="" disabled selected>Seu Pet</option>
-          <option value="cachorro">Cachorro</option>
-          <option value="gato">Gato</option>
-          <option value="passaro">Macaco</option>
-          <option value="peixe">Peixe</option>
-        </select>
-      </form>
+    <div class="form-container w-3/4 mx-auto bg-[#FFF6DF] rounded-2xl">
+      <div class="flex flex-col items-center p-8">
+        <p class="font-bold text-3xl">Cadastre-se e receba as melhores novidades!</p>
+        <form class="w-full flex   mt-10 gap-14">
+          <input type="text" placeholder="Seu email" class="p-3 rounded-xl border-[#F2AC29] border-2 flex-[4]">
+          <select id="pet-select" class="flex-[1]  border-[#F2AC29] border-2 rounded-xl text-center text-gray-400">
+            <option value="" disabled selected class="text-gray-400">Seu Pet</option>
+            <option value="cachorro">Cachorro</option>
+            <option value="gato">Gato</option>
+            <option value="passaro">Macaco</option>
+            <option value="peixe">Peixe</option>
+          </select>
+        </form>
+        <button class="bg-[#F2AC29] font-bold text-3xl self-start mt-5 p-4 rounded-md">Cadastrar</button>
+      </div>
 
     </div>
   </main>
