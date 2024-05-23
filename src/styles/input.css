@@ -16,21 +16,29 @@
 }
 
 
+
+
+
 #swiper1{
   margin-top: 5rem;
   width: 100%;
-  border-radius: 40px;
 } 
-#swiper2{
-  margin-top: 5rem;
-  width: 100%;
-}
-#swiper2 .swiper-slide img{
+#swiper1 img{
   text-align: center;
   width: 100%;
   /* Centralizar o conteúdo do slide */
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
+}
+#swiper2{
+  width: 100%;
+  margin-top: 3rem;
+}
+#swiper2 img{
+  width: auto;
+  /* Centralizar o conteúdo do slide */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
