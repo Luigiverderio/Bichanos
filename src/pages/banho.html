@@ -17,40 +17,44 @@
 </head>
 
 <body class="flex flex-col font-lato focus:outline-none">
-    <!--HEADER-->
-    <header class="w-full border-b-4 p-6 flex-col gap-4 flex containerF">
-        <!--LOGO + BARRA DE PESQUISA-->
-        <div class="w-full flex items-center gap-12">
-            <img src="../../assets/logo.png" alt="" class="w-[200px] h-[70px]">
-            <!--BARRA DE PESQUISA-->
-            <div class="h-[50px] w-full flex items-center border-2 border-gray-400 rounded-md bg-white gap-3 px-[2rem]">
-                <img src="../../assets/icons/search.png" alt="" class="icon min-w-[35px]">
-                <input type="text" class="h-full w-full focus:outline-none text-[1.1rem]"
-                    placeholder="O que seu bichano precisa?">
-            </div>
-            <div class="flex items-center gap-4">
-                <a href=""><img src="../../assets/icons/Phone.svg" alt="" class="icon w-8 h-8"></a>
-                <a href=""><img src="../../assets/icons/Favorite.svg" alt="" class="icon w-8 h-8"></a>
-                <a href=""><img src="../../assets/icons/cesta.svg" alt="" class="icon w-8 h-8"></a>
-            </div>
-        </div>
-        <!--FIM LOGO + BARRA DE PESQUISA-->
+     <!--HEADER-->
+  <header class="w-full border-b-4 border-blue-700 py-12 flex-col flex paddingDosLados">
+    <!--LOGO + BARRA DE PESQUISA-->
+    <div class="w-full flex items-center gap-4 justify-between">
+      <a href="./index.html" class=""><img src="../../assets/logo.png" alt="" class="w-[200px]"></a>
+      <!--BARRA DE PESQUISA-->
+      <div class="h-[50px] w-full flex items-center border-2 rounded-md bg-white gap-3 px-[1rem] max-w-[600px]">
+        <img src="../../assets/icons/search.png" alt="" class="w-auto h-[35px] min-h-[35px]">
+        <input type="text" class="h-full w-full focus:outline-none text-[1.1rem]"
+          placeholder="O que seu bichano precisa?">
+      </div>
 
-        <!--NavLinks + Contatos-->
-        <nav class="w-full flex items-center justify-between mt-4">
-            <ul class="flex gap-12  font-bold">
-                <li><a href="#">Cachorro</a></li>
-                <li><a href="#">Gato</a></li>
-                <li><a href="#">Plano Bichanos</a></li>
-                <li><a href="#">Sobre nós</a></li>
-            </ul>
-            <ul class="flex items-center gap-12 font-bold">
-                <li><a href="">Login</a></li>
-                <li><a href="">Cadastro</a></li>
-            </ul>
-        </nav>
-        <!--FIM NavLinks + Contatos-->
-    </header>
+      <div class="flex items-center gap-4">
+        <a href=""><img src="../../assets/icons/Phone.svg" alt="" class="icon w-8 h-8"></a>
+        <a href=""><img src="../../assets/icons/Favorite.svg" alt="" class="icon w-8 h-8"></a>
+        <a href=""><img src="../../assets/icons/cesta.svg" alt="" class="icon w-8 h-8"></a>
+      </div>
+    </div>
+    <!--FIM LOGO + BARRA DE PESQUISA-->
+
+    <!--NavLinks + Contatos-->
+    <nav class="w-full flex items-center justify-between mt-4" id="NavLinks">
+      <ul class="flex gap-12  font-bold">
+        <li><a href="#">Cachorro</a></li>
+        <li><a href="#">Gato</a></li>
+        <li><a href="#">Plano Bichanos</a></li>
+        <li><a href="#">Sobre nós</a></li>
+        <li><a href="./index.html">Home</a></li>
+
+      </ul>
+      <ul class="flex items-center gap-12 font-bold">
+        <li><a href="">Login</a></li>
+        <li><a href="">Cadastro</a></li>
+      </ul>
+    </nav>
+    <!--FIM NavLinks + Contatos-->
+  </header>
+  <!--FIM HEADER-->
     <main class="content mx-auto p-8">
 
         <section class="w-full mt-12 bg-white shadow-md rounded-lg p-8 flex items-center justify-between">

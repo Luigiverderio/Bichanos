@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bichanos</title>
+  <link rel="stylesheet" href="../styles/output.css">
+  <link rel="stylesheet" href="../styles/input.css">
+  <link rel="stylesheet" href="../styles/carrossel.css">
+  <link rel="stylesheet" href="../../node_modules/swiper/swiper-bundle.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+  </style>
+</head>
+<!--HEADER-->
+
+<body>
+  <header class="w-full border-b-4 border-blue-700 py-12 flex-col flex paddingDosLados">
+    <!--LOGO + BARRA DE PESQUISA-->
+    <div class="w-full flex items-center gap-4 justify-between">
+      <a href="./index.html" class=""><img src="../../assets/logo.png" alt="" class="w-[200px]"></a>
+      <!--BARRA DE PESQUISA-->
+      <div class="h-[50px] w-full flex items-center border-2 rounded-md bg-white gap-3 px-[1rem] max-w-[600px]">
+        <img src="../../assets/icons/search.png" alt="" class="w-auto h-[35px] min-h-[35px]">
+        <input type="text" class="h-full w-full focus:outline-none text-[1.1rem]"
+          placeholder="O que seu bichano precisa?">
+      </div>
+
+      <div class="flex items-center gap-4">
+        <a href=""><img src="../../assets/icons/Phone.svg" alt="" class="icon w-8 h-8"></a>
+        <a href=""><img src="../../assets/icons/Favorite.svg" alt="" class="icon w-8 h-8"></a>
+        <a href=""><img src="../../assets/icons/cesta.svg" alt="" class="icon w-8 h-8"></a>
+      </div>
+    </div>
+    <!--FIM LOGO + BARRA DE PESQUISA-->
+
+    <!--NavLinks + Contatos-->
+    <nav class="w-full flex items-center justify-between mt-4" id="NavLinks">
+      <ul class="flex gap-12  font-bold">
+        <li><a href="#">Cachorro</a></li>
+        <li><a href="#">Gato</a></li>
+        <li><a href="#">Plano Bichanos</a></li>
+        <li><a href="#">Sobre nós</a></li>
+        <li><a href="./index.html">Home</a></li>
+
+      </ul>
+      <ul class="flex items-center gap-12 font-bold">
+        <li><a href="">Login</a></li>
+        <li><a href="">Cadastro</a></li>
+      </ul>
+    </nav>
+    <!--FIM NavLinks + Contatos-->
+  </header>
+  <!--FIM HEADER-->
+
+  <!--MAIN-->
+  <main class="w-screen h-screen">
+    <div class="flex">
+      <div class="w-1/4">
+        <img src="../../assets/cao.png" alt="">
+      </div>
+      <div class="w-3/4">
+        <div>Dê o primeiro passo para melhorar o comportamento do seu bichano</div>
+        <div>Adestramento online e presencial para te ajudar a transformar a relação com o seu melhor amigo.</div>
+        <button></button>
+      </div>
+    </div>
+  </main>
+
+  <script src="../../node_modules/swiper/swiper-bundle.js"></script>
+  <script src="../scripts/carrossel.js"></script>
+</body>
