@@ -56,3 +56,14 @@
   @apply hover:text-blue-700
 
 }
+
+#cardDogs h3{
+  height: 100px;
+}
+
+#cardCats h3{
+  height: 100px;
+}
+li{
+  cursor: none;
+}
