@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bichanos</title>
+    <link rel="stylesheet" href="../styles/output.css">
+    <link rel="stylesheet" href="../styles/input.css">
+    <link rel="stylesheet" href="../styles/carrossel.css">
+    <link rel="stylesheet" href="../../node_modules/swiper/swiper-bundle.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+    </style>
+</head>
+
+<body class="flex flex-col font-lato focus:outline-none">
+    <!--HEADER-->
+    <header class="w-full border-b-4 p-6 flex-col gap-4 flex containerF">
+        <!--LOGO + BARRA DE PESQUISA-->
+        <div class="w-full flex items-center gap-12">
+            <img src="../../assets/logo.png" alt="" class="w-[200px] h-[70px]">
+            <!--BARRA DE PESQUISA-->
+            <div class="h-[50px] w-full flex items-center border-2 border-gray-400 rounded-md bg-white gap-3 px-[2rem]">
+                <img src="../../assets/icons/search.png" alt="" class="icon min-w-[35px]">
+                <input type="text" class="h-full w-full focus:outline-none text-[1.1rem]"
+                    placeholder="O que seu bichano precisa?">
+            </div>
+            <div class="flex items-center gap-4">
+                <a href=""><img src="../../assets/icons/Phone.svg" alt="" class="icon w-8 h-8"></a>
+                <a href=""><img src="../../assets/icons/Favorite.svg" alt="" class="icon w-8 h-8"></a>
+                <a href=""><img src="../../assets/icons/cesta.svg" alt="" class="icon w-8 h-8"></a>
+            </div>
+        </div>
+        <!--FIM LOGO + BARRA DE PESQUISA-->
+
+        <!--NavLinks + Contatos-->
+        <nav class="w-full flex items-center justify-between mt-4">
+            <ul class="flex gap-12  font-bold">
+                <li><a href="#">Cachorro</a></li>
+                <li><a href="#">Gato</a></li>
+                <li><a href="#">Plano Bichanos</a></li>
+                <li><a href="#">Sobre nós</a></li>
+            </ul>
+            <ul class="flex items-center gap-12 font-bold">
+                <li><a href="">Login</a></li>
+                <li><a href="">Cadastro</a></li>
+            </ul>
+        </nav>
+        <!--FIM NavLinks + Contatos-->
+    </header>
+    <main class="content mx-auto p-8">
+
+        <section class="w-full mt-12 bg-white shadow-md rounded-lg p-8 flex items-center justify-between">
+            <div class="flex flex-col">
+                <h1 class="text-4xl font-lilita text-blue-700 mb-4">BANHO & TOSA</h1>
+                <h2 class="text-2xl font-bold mb-2">O cuidado que seu bichano merece!</h2>
+                <p class="mb-4">Serviços completos e seguros para a higiene <br> do seu melhor amigo.</p>
+                <a href="https://puroafeto.com/" target="_blank"
+                    class="inline-flex items-center px-4 py-2 w-[50%] bg-blue-300 font-bold rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105">
+                    <img src="/assets/banho/cachorro.svg" alt="Icone de cachorro"
+                        class="w-8 h-8 mr-2 transform transition-transform duration-300 hover:scale-110"> Agendar &rarr;
+                </a>
+            </div>
+            <img src="/assets/banho/img1.png" alt="Cachorro no banho"
+                class="rounded-lg ml-5 w-80 transform transition-transform duration-300 hover:scale-105">
+        </section>
+        <section class="mt-12 rounded-lg p-8 flex items-center justify-center">
+            <div class="flex items-center gap-0 relative">
+              <img src="/assets/banho/img2.png" alt="Cachorro no banho" class="rounded-lg transform transition-transform duration-300 hover:scale-105 h-[260px]">
+              <div class="flex flex-col bg-yellow-100 p-6 rounded-lg w-[330px] h-auto">
+                <h2 class="text-2xl font-bold mb-4">Etapas do Banho</h2>
+                <ol class="list-decimal list-inside">
+                  <li>Banho</li>
+                  <li>Secagem</li>
+                  <li>Escova na pelagem</li>
+                  <li>Limpeza dos ouvidos</li>
+                  <li>Corte de Unhas</li>
+                </ol>
+                <img src="../../assets/banho/agua.png" alt="Espirro de água" class="absolute bottom-0 right-0 w-16 h-16 transform transition-transform duration-300 hover:scale-105">
+              </div>
+            </div>
+          </section>
+          <section class="flex items-center ml-8">
+            <img src="/assets/banho/info.svg" alt="Informação" class="w-4 h-4 mr-2">
+            <p class="text-gray-700">Para tranquilizar filhotes, gatos e pets idosos, os tutores precisam acompanhar os serviços em loja.</p>
+          </section>
+        <div class="flex justify-center space-x-20 mt-20">
+            <!-- Cartão de Desconto 20% OFF -->
+            <div class="flex items-center bg-gray-100 p-4 rounded-lg transform transition-transform duration-300 hover:scale-110">
+              <div class="bg-blue-200 text-blue-700 font-bold text-center p-4 rounded-lg font-lilita transform transition-transform duration-300 hover:scale-105">
+                <span class="block text-3xl">20%</span>
+                <span class="block text-xl">OFF</span>
+              </div>
+              <div class="ml-4">
+                <span class="block font-bold">no pacote de</span>
+                <span class="block font-bold">4 banhos ou mais</span>
+                <span class="block text-sm text-gray-600">para usar em até 10 meses</span>
+              </div>
+            </div>
+            <!-- Cartão de Desconto 15% OFF -->
+            <div class="flex items-center bg-gray-100 p-4 rounded-lg transform transition-transform duration-300 hover:scale-110">
+              <div class="bg-blue-200 text-blue-700 font-bold text-center p-4 rounded-lg font-lilita transform transition-transform duration-300 hover:scale-105">
+                <span class="block text-3xl">15%</span>
+                <span class="block text-xl">OFF</span>
+              </div>
+              <div class="ml-4">
+                <span class="block font-bold">em todos os serviços para</span>
+                <span class="block font-bold text-lg">Assinantes Bichanos</span>
+              </div>
+            </div>
+          </div>
+          <section class="bg-yellow-100 p-8 rounded-lg mt-20">
+            <h2 class="text-2xl font-bold mb-6">Dúvidas Frequentes</h2>
+            <div class="space-y-4">
+            <!-- Pergunta 1 -->
+            <div class="border-b border-gray-400 py-4">
+            <input type="checkbox" id="question-1" class="hidden">
+            <label for="question-1" class="flex justify-between items-center cursor-pointer">
+                <span class="text-lg font-medium">Como funciona a triagem antes do atendimento?</span>
+                <span class="text-2xl font-bold">+</span>
+            </label>
+            <div class="hidden mt-2 text-gray-700" id="answer-1">
+                Ao chegar na loja, conferimos se os dados do cadastro feito pelo cliente estão corretos e avaliamos <br> o que seu pet precisa.
+            </div>
+            </div>
+            <!-- Pergunta 2 -->
+            <div class="border-b border-gray-400 py-4">
+            <input type="checkbox" id="question-2" class="hidden">
+            <label for="question-2" class="flex justify-between items-center cursor-pointer">
+                <span class="text-lg font-medium">O que fazer para cancelar meu agendamento?</span>
+                <span class="text-2xl font-bold">+</span>
+            </label>
+            <div class="hidden mt-2 text-gray-700" id="answer-2">
+                Para cancelar seu agendamento, você deve entrar em contato pelo telefone (11) 9999-9999 ou <br> pelo e-mail puroafeto@site.com
+            </div>
+            </div>
+            <!-- Pergunta 3 -->
+            <div class="border-b border-gray-400 py-4">
+            <input type="checkbox" id="question-3" class="hidden">
+            <label for="question-3" class="flex justify-between items-center cursor-pointer">
+                <span class="text-lg font-medium">Quais serviços estão inclusos no banho?</span>
+                <span class="text-2xl font-bold">+</span>
+            </label>
+            <div class="hidden mt-2 text-gray-700" id="answer-3">
+                Os serviços inclusos no banho são: secagem, escova na pelagem, limpeza dos ouvidos, corte de unhas.
+            </div>
+            </div>
+            <!-- Pergunta 4 -->
+            <div class="border-b border-gray-400 py-4">
+            <input type="checkbox" id="question-4" class="hidden">
+            <label for="question-4" class="flex justify-between items-center cursor-pointer">
+                <span class="text-lg font-medium">Todos os portes são aceitos?</span>
+                <span class="text-2xl font-bold">+</span>
+            </label>
+            <div class="hidden mt-2 text-gray-700" id="answer-4">
+                Sim, aceitamos todos os portes de animais.
+            </div>
+            </div>
+          </section>
+    </main>
+    <footer class="flex justify-between items-center  p-5 border-t-4 border-blue-700 mt-12">
+        <div class="flex flex-col items-center">
+          <span class="mb-2">Redes Sociais</span>
+          <div class="flex">
+            <img src="/assets/icons-footer/Facebook F.svg" alt="Facebook" class="w-8 h-8 mr-2">
+            <img src="/assets/icons-footer/Instagram.svg" alt="Instagram" class="w-8 h-8 mr-2">
+            <img src="/assets/icons-footer/YouTube.svg" alt="YouTube" class="w-8 h-8 mr-2">
+            <img src="/assets/icons-footer/TikTok.svg" alt="TikTok" class="w-8 h-8 mr-2">
+          </div>
+        </div>
+        <div class="flex items-center">
+          <img src="/assets/logo-techno.svg" alt="TECHNO" class="w-24">
+        </div>
+        <div class="flex flex-col items-center">
+          <span class="mb-2">Meios de Pagamento</span>
+          <div class="flex">
+            <img src="/assets/icons-footer/visa.svg" alt="Visa" class="w-8 h-8 mr-2">
+            <img src="/assets/icons-footer/mastercard.svg" alt="Mastercard" class="w-8 h-8 mr-2">
+            <img src="/assets/icons-footer/elo.svg" alt="Elo" class="w-8 h-8 mr-2">
+            <img src="/assets/icons-footer/hipercard.svg" alt="Hipercard" class="w-8 h-8 mr-2">
+            <img src="/assets/icons-footer/pix.svg" alt="Pix" class="w-8 h-8 mr-2">
+          </div>
+        </div>
+      </footer>
+</body>
+
+<script>
+    document.querySelectorAll('input[type="checkbox"]').forEach((checkbox) => {
+      checkbox.addEventListener('change', function() {
+        document.querySelectorAll('input[type="checkbox"]').forEach((cb) => {
+          if (cb !== checkbox) {
+            cb.checked = false;
+          }
+        });
+        document.querySelectorAll('.answer').forEach((answer) => {
+          answer.classList.add('hidden');
+        });
+        if (checkbox.checked) {
+          const answerId = checkbox.id.replace('question', 'answer');
+          document.getElementById(answerId).classList.remove('hidden');
+        }
+      });
+    });
+  </script>
+
+</html>
