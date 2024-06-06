@@ -3,42 +3,56 @@
 @tailwind utilities;
 
 /*Criando a classe container que aplica padding de 220px*/
-.containerF{
+.paddingDosLados{
   @apply px-[220px]
 }
+
+
+.iconesAnimais{
+  @apply w-auto h-[35px] min-h-[35px]
+
+}
+
 /*Criando a classe que aplica uma largura e altura para os icones*/
 .icon{
-  @apply w-auto h-[35px] min-h-[35px] min-w-[30px]
+  @apply w-auto h-[35px] min-h-[35px] min-w-[30px] hover:scale-125 transition-all
 }
 /*Criando o estilo dos itens*/
 .item{
-  @apply text-[#0049A6] bg-[#FFF6DF] font-bold rounded-lg h-[60px] items-center flex justify-center w-[33%] hover:text-[#FFF6DF] hover:bg-[#0049A6] cursor-pointer
+  @apply text-[#0049A6] bg-[#FFF6DF] font-bold rounded-lg h-[60px] items-center flex justify-center w-[33%] hover:text-[#FFF6DF] hover:bg-[#0049A6] cursor-pointer hover:scale-110 transition-all min-w-[200px]
 }
 
+.swiper-slide{
+  display: flex;
+  align-items: center;
 
-
-
-
+}
 #swiper1{
   margin-top: 5rem;
   width: 100%;
 } 
+
 #swiper1 img{
   text-align: center;
   width: 100%;
-  /* Centralizar o conteúdo do slide */
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 #swiper2{
   width: 100%;
   margin-top: 3rem;
-}
-#swiper2 img{
-  width: auto;
-  /* Centralizar o conteúdo do slide */
   display: flex;
-  justify-content: center;
+;
+}
+.swiper-slide{
+  display: flex;
   align-items: center;
+  justify-content: center;
+}
+.gatin{
+  width: 50px;
+  height: 60px;
+}
+
+#NavLinks a{
+  @apply hover:text-blue-700
+
 }
