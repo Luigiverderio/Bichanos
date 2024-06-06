@@ -17,46 +17,48 @@
 
 <body class="flex flex-col font-lato">
   <!--HEADER-->
-  <header class="w-full border-b-4 p-6 flex-col gap-4 flex containerF">
+  <header class="w-full border-b-4 border-blue-700 py-12 flex-col flex paddingDosLados">
     <!--LOGO + BARRA DE PESQUISA-->
-    <div class="w-full flex items-center gap-12">
-        <img src="../../assets/logo.png" alt="" class="w-[200px] h-[70px]">
-        <!--BARRA DE PESQUISA-->
-        <div class="h-[50px] w-full flex items-center border-2 border-gray-400 rounded-md bg-white gap-3 px-[2rem]">
-            <img src="../../assets/icons/search.png" alt="" class="icon min-w-[35px]">
-            <input type="text" class="h-full w-full focus:outline-none text-[1.1rem]" placeholder="O que seu bichano precisa?">
-        </div>
-        <div class="flex items-center gap-4">
-            <a href=""><img src="../../assets/icons/Phone.svg" alt="" class="icon w-8 h-8"></a>
-            <a href=""><img src="../../assets/icons/Favorite.svg" alt="" class="icon w-8 h-8"></a>
-            <a href=""><img src="../../assets/icons/cesta.svg" alt="" class="icon w-8 h-8"></a>
-        </div>
+    <div class="w-full flex items-center gap-4 justify-between">
+      <a href="./index.html" class="" ><img src="../../assets/logo.png" alt="" class="w-[200px]"></a>
+      <!--BARRA DE PESQUISA-->
+      <div class="h-[50px] w-full flex items-center border-2 rounded-md bg-white gap-3 px-[1rem] max-w-[600px]">
+        <img src="../../assets/icons/search.png" alt="" class="w-auto h-[35px] min-h-[35px]">
+        <input type="text" class="h-full w-full focus:outline-none text-[1.1rem]"
+          placeholder="O que seu bichano precisa?">
+      </div>
+
+      <div class="flex items-center gap-4">
+        <a href=""><img src="../../assets/icons/Phone.svg" alt="" class="icon w-8 h-8"></a>
+        <a href=""><img src="../../assets/icons/Favorite.svg" alt="" class="icon w-8 h-8"></a>
+        <a href=""><img src="../../assets/icons/cesta.svg" alt="" class="icon w-8 h-8"></a>
+      </div>
     </div>
     <!--FIM LOGO + BARRA DE PESQUISA-->
 
     <!--NavLinks + Contatos-->
-    <nav class="w-full flex items-center justify-between mt-4">
-        <ul class="flex gap-12  font-bold">
-            <li><a href="#">Cachorro</a></li>
-            <li><a href="#">Gato</a></li>
-            <li><a href="#">Plano Bichanos</a></li>
-            <li><a href="#">Sobre nós</a></li>
-        </ul>
-        <ul class="flex items-center gap-12 font-bold">
-            <li><a href="">Login</a></li>
-            <li><a href="">Cadastro</a></li>
-        </ul>
+    <nav class="w-full flex items-center justify-between mt-4" id="NavLinks">
+      <ul class="flex gap-12  font-bold">
+        <li><a href="#">Cachorro</a></li>
+        <li><a href="#">Gato</a></li>
+        <li><a href="#">Plano Bichanos</a></li>
+        <li><a href="#">Sobre nós</a></li>
+      </ul>
+      <ul class="flex items-center gap-12 font-bold">
+        <li><a href="">Login</a></li>
+        <li><a href="">Cadastro</a></li>
+      </ul>
     </nav>
     <!--FIM NavLinks + Contatos-->
-</header>
+  </header>
   <!--FIM HEADER-->
-  <main class="containerF w-full">
+  <main class="paddingDosLados w-full">
 
     <section class="justify-center w-full flex gap-12 mt-12 ">
-      <li class="item"><a href="#">Cachorro</a></li>
-      <li class="item"><a href="#">Gato</a></li>
-      <li class="item"><a href="#">Plano Bichanos</a></li>
-      <li class="item"><a href="#">Sobre nós</a></li>
+      <li class="item"><a href="#">Planos Veterinários</a></li>
+      <li class="item"><a href="#">Adestramento</a></li>
+      <li class="item"><a href="#">Banho e Tosa</a></li>
+      <li class="item"><a href="./box.html">Box Bichanos</a></li>
     </section>
 
     <!--CARROSSEL BANNER-->
@@ -85,7 +87,7 @@
 
     <!-- CARROSSEL PRODUTOS -->
     <div class="swiper" id="swiper2">
-      <div class="swiper-wrapper">
+      <div class="swiper-wrapper swiper-wrapper2">
         <!-- Slides -->
         <div class="swiper-slide">
           <img src="../../assets/produtos/produto (1).png" alt="">
@@ -185,30 +187,37 @@
 
     <!--CAT AND DOG-->
     <section class="w-full h-[15rem] flex justify-around my-[10rem]">
-      <div class="h-[15rem] w-[15rem] border rounded-full hover:scale-105 transition-all"><img src="../../assets/dog.png" alt="" class="w-full h-full"></div>
+      <div class="h-[15rem] w-[15rem] border rounded-full hover:scale-105 transition-all"><img
+          src="../../assets/dog.png" alt="" class="w-full h-full"></div>
 
 
-      <div class="h-[15rem] w-[15rem] border rounded-full hover:scale-105 transition-all"><img src="../../assets/cat.png" alt="" class="w-full h-full"></div>
+      <div class="h-[15rem] w-[15rem] border rounded-full hover:scale-105 transition-all"><img
+          src="../../assets/cat.png" alt="" class="w-full h-full"></div>
     </section>
 
-    <div class="form-container w-3/4 mx-auto bg-[#FFF6DF] rounded-2xl">
-      <div class="flex flex-col items-center p-8">
-        <p class="font-bold text-3xl">Cadastre-se e receba as melhores novidades!</p>
-        <form class="w-full flex   mt-10 gap-14">
-          <input type="text" placeholder="Seu email" class="p-3 rounded-xl border-[#F2AC29] border-2 flex-[4]">
-          <select id="pet-select" class="flex-[1]  border-[#F2AC29] border-2 rounded-xl text-center text-gray-400">
-            <option value="" disabled selected class="text-gray-400">Seu Pet</option>
-            <option value="cachorro">Cachorro</option>
-            <option value="gato">Gato</option>
-            <option value="passaro">Macaco</option>
-            <option value="peixe">Peixe</option>
-          </select>
-        </form>
-        <button class="bg-[#F2AC29] font-bold text-3xl self-start mt-5 p-4 rounded-md">Cadastrar</button>
-      </div>
+    <!--FORMS -->
 
-    </div>
-    <!--FIM CARROSSEL-->
+      <div class="mx-auto bg-[#FFF6DF] rounded-2xl shadow-md flex flex-col w-[700px] p-4">
+        <img src="../../assets/gatin.png" alt="" class="gatin self-end">
+        <div class="flex flex-col items-center px-12">
+          <p class="font-bold text-2xl text-gray-700">Cadastre-se e receba as melhores novidades!</p>
+          <form class="w-full flex mt-10 gap-4">
+            <input type="text" placeholder="Seu email" class="p-3 rounded-xl border-[#F2AC29] border-2 flex-grow">
+            <select id="pet-select" class="flex-grow  p-3 border-[#F2AC29] border-2 rounded-xl text-gray-400">
+              <option value="" disabled selected class="text-gray-400">Seu Pet</option>
+              <option value="cachorro">Cachorro</option>
+              <option value="gato">Gato</option>
+              <option value="passaro">Macaco</option>
+              <option value="peixe">Peixe</option>
+            </select>
+          </form>
+          <button
+          class="bg-[#F2AC29] font-bold text-xl mt-5 p-4 rounded-md hover:scale-105 transition-all hover:opacity-70"
+          onclick="cadastrar(email, pet)">CADASTRAR</button>
+        </div>
+        <img src="../../assets/gatin.png" alt="" class="gatin self-start">
+
+      </div>
   </main>
   <!--FOOTER-->
   <footer class="flex justify-between items-center  p-5 border-t-4 border-blue-700 mt-12">

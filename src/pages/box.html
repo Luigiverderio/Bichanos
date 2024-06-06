@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bichanos</title>
+  <link rel="stylesheet" href="../styles/output.css">
+  <link rel="stylesheet" href="../styles/input.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+  </style>
+</head>
+
+<body class="flex flex-col font-lato">
+  <!--HEADER-->
+  <header class="w-full border-b-4 border-blue-700 py-12 flex-col flex paddingDosLados">
+    <!--LOGO + BARRA DE PESQUISA-->
+    <div class="w-full flex items-center gap-4 justify-between">
+      <a href="./index.html" class=""><img src="../../assets/logo.png" alt="" class="w-[200px]"></a>
+      <!--BARRA DE PESQUISA-->
+      <div class="h-[50px] w-full flex items-center border-2 rounded-md bg-white gap-3 px-[1rem] max-w-[600px]">
+        <img src="../../assets/icons/search.png" alt="" class="w-auto h-[35px] min-h-[35px]">
+        <input type="text" class="h-full w-full focus:outline-none text-[1.1rem]"
+          placeholder="O que seu bichano precisa?">
+      </div>
+
+      <div class="flex items-center gap-4">
+        <a href=""><img src="../../assets/icons/Phone.svg" alt="" class="icon w-8 h-8"></a>
+        <a href=""><img src="../../assets/icons/Favorite.svg" alt="" class="icon w-8 h-8"></a>
+        <a href=""><img src="../../assets/icons/cesta.svg" alt="" class="icon w-8 h-8"></a>
+      </div>
+    </div>
+    <!--FIM LOGO + BARRA DE PESQUISA-->
+
+    <!--NavLinks + Contatos-->
+    <nav class="w-full flex items-center justify-between mt-4" id="NavLinks">
+      <ul class="flex gap-12  font-bold">
+        <li><a href="#">Cachorro</a></li>
+        <li><a href="#">Gato</a></li>
+        <li><a href="#">Plano Bichanos</a></li>
+        <li><a href="#">Sobre nós</a></li>
+      </ul>
+      <ul class="flex items-center gap-12 font-bold">
+        <li><a href="">Login</a></li>
+        <li><a href="">Cadastro</a></li>
+      </ul>
+    </nav>
+    <!--FIM NavLinks + Contatos-->
+  </header>
+  <!--FIM HEADER-->
+
+
+  <!--MAIN-->
+
+  <div class="mx-auto w-[60%] my-12"><img src="../../assets/Banner2.png" alt=""></div>
+  <div class="h-[900px]">
+    <div class="mx-auto w-[70%] h-[200px] bg-[#FFF6DF] my-12 rounded-[50px] flex items-center pt-7 flex-col">
+      <div class="flex">
+        <img src="../../assets/caozin.png" class="iconesAnimais">
+        <h1 class="text-3xl font-bold ">Como Funciona?</h1><img src="../../assets/gatin.png" alt="" class="iconesAnimais">
+      </div>
+      <p class="text-center font-normal mt-2 px-12 text-xl">Seu bichano recebe todo mês uma caixa com produtos de enriquecimento
+        ambiental e diversão, petiscos de qualidade super premium e novidades que variam a cada tema</p>
+
+
+
+
+      <!--CARDS-->
+      <div class="flex mt-10 gap-8">
+        <div class="card w-[362px]  bg-white border-2 border-black rounded-[30px] px-8 flex flex-col py-12">
+          <h1 class="text-center text-2xl font-bold">Escolha seu plano</h1>
+          <p class="text-center mt-5">Escolha a trilha de experiência que mais combina com as necessidades ou preferências
+            do seu amigo. Escolha também a vigência do plano</p>
+        </div>
+        <div class="card w-[362px]  bg-white border-2 border-black rounded-[30px] px-8 flex flex-col py-12">
+          <h1 class="text-center text-2xl font-bold">Escolha seu plano</h1>
+          <p class="text-center mt-5">Escolha a trilha de experiência que mais combina com as necessidades ou preferências
+            do seu amigo. Escolha também a vigência do plano</p>
+        </div>
+        <div class="card w-[362px]  bg-white border-2 border-black rounded-[30px] px-8 flex flex-col py-12">
+          <h1 class="text-center text-2xl font-bold">Escolha seu plano</h1>
+          <p class="text-center mt-5">Escolha a trilha de experiência que mais combina com as necessidades ou preferências
+            do seu amigo. Escolha também a vigência do plano</p>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+
+
+
+  <!--FIM MAIN-->
+
+
+  <!--FOOTER-->
+  <footer class="flex justify-between items-center  p-5 border-t-4 border-blue-700 mt-12">
+    <div class="flex flex-col items-center">
+      <span class="mb-2">Redes Sociais</span>
+      <div class="flex">
+        <img src="/assets/icons-footer/Facebook F.svg" alt="Facebook" class="w-8 h-8 mr-2">
+        <img src="/assets/icons-footer/Instagram.svg" alt="Instagram" class="w-8 h-8 mr-2">
+        <img src="/assets/icons-footer/YouTube.svg" alt="YouTube" class="w-8 h-8 mr-2">
+        <img src="/assets/icons-footer/TikTok.svg" alt="TikTok" class="w-8 h-8 mr-2">
+      </div>
+    </div>
+    <div class="flex items-center">
+      <img src="/assets/logo-techno.svg" alt="TECHNO" class="w-24">
+    </div>
+    <div class="flex flex-col items-center">
+      <span class="mb-2">Meios de Pagamento</span>
+      <div class="flex">
+        <img src="/assets/icons-footer/visa.svg" alt="Visa" class="w-8 h-8 mr-2">
+        <img src="/assets/icons-footer/mastercard.svg" alt="Mastercard" class="w-8 h-8 mr-2">
+        <img src="/assets/icons-footer/elo.svg" alt="Elo" class="w-8 h-8 mr-2">
+        <img src="/assets/icons-footer/hipercard.svg" alt="Hipercard" class="w-8 h-8 mr-2">
+        <img src="/assets/icons-footer/pix.svg" alt="Pix" class="w-8 h-8 mr-2">
+      </div>
+    </div>
+  </footer>
+  <!--FIM FOOTER-->
+</body>
+
+<!--COLOCANDO O SCRIPT DOS ÍCONES-->
+<script src="https://kit.fontawesome.com/1b8606bd84.js" crossorigin="anonymous"></script>
+<!--COLOCANDO O SCRIPT DO CARROSSEL-->
+<script src="../../node_modules/swiper/swiper-bundle.js"></script>
+<script src="../scripts/carrossel.js"></script>
+
+</html>
