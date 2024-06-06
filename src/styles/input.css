@@ -21,7 +21,6 @@
 .item{
   @apply text-[#0049A6] bg-[#FFF6DF] font-bold rounded-lg h-[60px] items-center flex justify-center w-[33%] hover:text-[#FFF6DF] hover:bg-[#0049A6] cursor-pointer hover:scale-110 transition-all min-w-[200px]
 }
-
 .swiper-slide{
   display: flex;
   align-items: center;
