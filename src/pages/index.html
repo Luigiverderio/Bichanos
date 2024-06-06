@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="pt-br">
 
 <head>
@@ -9,43 +10,47 @@
   <link rel="stylesheet" href="../styles/input.css">
   <link rel="stylesheet" href="../styles/carrossel.css">
   <link rel="stylesheet" href="../../node_modules/swiper/swiper-bundle.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+  </style>
 </head>
 
-<body>
+<body class="flex flex-col font-lato">
   <!--HEADER-->
-  <header class="w-full border-b-4 p-6 flex-col gap-7 flex containerF">
+  <header class="w-full border-b-4 p-6 flex-col gap-4 flex containerF">
     <!--LOGO + BARRA DE PESQUISA-->
-    <div class="w-full flex items-center gap-12 mt-5">
-      <img src="../../assets/logo.png" alt="" class="w-[226px] h-[78px]">
-      <!--BARRA DE PESQUISA-->
-      <div class="h-[60px] w-full flex items-center border-2 border-black rounded-md bg-white gap-3 px-[1rem]">
-        <img src="../../assets/icons/search.png" alt="" class="icon min-w-[35px]">
-        <input type="text" class="h-full w-full focus:outline-none text-[1.3rem]"
-          placeholder="O que seu bichano precisa?">
-      </div>
+    <div class="w-full flex items-center gap-12">
+        <img src="../../assets/logo.png" alt="" class="w-[200px] h-[70px]">
+        <!--BARRA DE PESQUISA-->
+        <div class="h-[50px] w-full flex items-center border-2 border-gray-400 rounded-md bg-white gap-3 px-[2rem]">
+            <img src="../../assets/icons/search.png" alt="" class="icon min-w-[35px]">
+            <input type="text" class="h-full w-full focus:outline-none text-[1.1rem]" placeholder="O que seu bichano precisa?">
+        </div>
+        <div class="flex items-center gap-4">
+            <a href=""><img src="../../assets/icons/Phone.svg" alt="" class="icon w-8 h-8"></a>
+            <a href=""><img src="../../assets/icons/Favorite.svg" alt="" class="icon w-8 h-8"></a>
+            <a href=""><img src="../../assets/icons/cesta.svg" alt="" class="icon w-8 h-8"></a>
+        </div>
     </div>
     <!--FIM LOGO + BARRA DE PESQUISA-->
 
     <!--NavLinks + Contatos-->
-    <nav class="w-full flex items-center justify-between ">
-      <ul class="flex gap-14 text-2xl font-medium">
-        <li><a href="#">Cachorro</a></li>
-        <li><a href="#">Gato</a></li>
-        <li><a href="#">Plano Bichanos</a></li>
-        <li><a href="#">Sobre nós</a></li>
-      </ul>
-
-      <ul class="flex items-center gap-12 font-bold">
-        <li><a href=""><img src="../../assets/icons/Phone.png" alt="" class="icon"></a></li>
-        <li><a href=""><img src="../../assets/icons/Favorite.png" alt="" class="icon"></a></li>
-        <li><a href=""><img src="../../assets/icons/cesta.png" alt="" class="icon"></a></li>
-
-        <li><a href="">Login</a></li>
-      </ul>
-      <!--FIM NavLinks + Contatos-->
-  </header>
+    <nav class="w-full flex items-center justify-between mt-4">
+        <ul class="flex gap-12  font-bold">
+            <li><a href="#">Cachorro</a></li>
+            <li><a href="#">Gato</a></li>
+            <li><a href="#">Plano Bichanos</a></li>
+            <li><a href="#">Sobre nós</a></li>
+        </ul>
+        <ul class="flex items-center gap-12 font-bold">
+            <li><a href="">Login</a></li>
+            <li><a href="">Cadastro</a></li>
+        </ul>
+    </nav>
+    <!--FIM NavLinks + Contatos-->
+</header>
   <!--FIM HEADER-->
-  <main class="containerF w-full h-5">
+  <main class="containerF w-full">
 
     <section class="justify-center w-full flex gap-12 mt-12 ">
       <li class="item"><a href="#">Cachorro</a></li>
@@ -168,8 +173,10 @@
           <h1>R$50</h1>
         </div>
       </div>
+
       <!-- Botões de navegação -->
       <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
       <div class="swiper-button-next"></div>
     </div>
     <!--FIM CARROSSEL PRODUTOS-->
@@ -195,10 +202,36 @@
       </div>
 
     </div>
+    <!--FIM CARROSSEL-->
   </main>
-
- 
+  <!--FOOTER-->
+  <footer class="flex justify-between items-center  p-5 border-t-4 border-blue-700 mt-12">
+    <div class="flex flex-col items-center">
+      <span class="mb-2">Redes Sociais</span>
+      <div class="flex">
+        <img src="/assets/icons-footer/Facebook F.svg" alt="Facebook" class="w-8 h-8 mr-2">
+        <img src="/assets/icons-footer/Instagram.svg" alt="Instagram" class="w-8 h-8 mr-2">
+        <img src="/assets/icons-footer/YouTube.svg" alt="YouTube" class="w-8 h-8 mr-2">
+        <img src="/assets/icons-footer/TikTok.svg" alt="TikTok" class="w-8 h-8 mr-2">
+      </div>
+    </div>
+    <div class="flex items-center">
+      <img src="/assets/logo-techno.svg" alt="TECHNO" class="w-24">
+    </div>
+    <div class="flex flex-col items-center">
+      <span class="mb-2">Meios de Pagamento</span>
+      <div class="flex">
+        <img src="/assets/icons-footer/visa.svg" alt="Visa" class="w-8 h-8 mr-2">
+        <img src="/assets/icons-footer/mastercard.svg" alt="Mastercard" class="w-8 h-8 mr-2">
+        <img src="/assets/icons-footer/elo.svg" alt="Elo" class="w-8 h-8 mr-2">
+        <img src="/assets/icons-footer/hipercard.svg" alt="Hipercard" class="w-8 h-8 mr-2">
+        <img src="/assets/icons-footer/pix.svg" alt="Pix" class="w-8 h-8 mr-2">
+      </div>
+    </div>
+  </footer>
+  <!--FIM FOOTER-->
 </body>
+
 <!--COLOCANDO O SCRIPT DOS ÍCONES-->
 <script src="https://kit.fontawesome.com/1b8606bd84.js" crossorigin="anonymous"></script>
 <!--COLOCANDO O SCRIPT DO CARROSSEL-->
