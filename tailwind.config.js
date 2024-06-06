@@ -5,10 +5,9 @@ module.exports = {
     extend: {
       fontFamily: {
         lato: ['Lato', 'sans-serif'],
+        lilita: ['Lilita One', 'sans-serif'],
       },
     },
-
   },
   plugins: [],
-  
 }
