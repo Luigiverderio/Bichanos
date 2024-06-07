@@ -57,18 +57,65 @@
   <!--FIM HEADER-->
 
   <!--MAIN-->
-  <main class="w-screen h-screen">
-    <div class="flex">
-      <div class="w-1/4">
+  <main class="">
+
+
+    <!--PRIMEIRA PARTE-->
+
+    <div class="flex w-3/4 mx-auto p-10">
+      <div class="w-2/4">
         <img src="../../assets/cao.png" alt="">
       </div>
-      <div class="w-3/4">
-        <div>Dê o primeiro passo para melhorar o comportamento do seu bichano</div>
-        <div>Adestramento online e presencial para te ajudar a transformar a relação com o seu melhor amigo.</div>
-        <button></button>
+      <div class="w-2/4 p-10">
+        <div class="font-bold text-3xl">Dê o primeiro passo para melhorar o comportamento do seu bichano</div>
+        <div class="py-2 max-w-[4]">Adestramento online e presencial para te ajudar a transformar a relação com o seu
+          melhor amigo.</div>
+        <a href="./erro404" target="_blank"
+          class="inline-flex items-center px-4 py-2 w-[50%] bg-[#F2AC29] font-bold rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105">
+          <img src="/assets/banho/cachorro.svg" alt="Icone de cachorro"
+            class="w-8 h-8 mr-2 transform transition-transform duration-300 hover:scale-110"> Agendar &rarr;
+        </a>
       </div>
     </div>
+
+    <!--SEGUNDA PARTE-->
+
+    <p class="font-bold text-3xl text-center mt-16">Produtos que vão facilitar o adestramento</p>
+
+    <!--CARROSSEL-->
+    <div class="swiper" id="swiperAdestramento">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide flex flex-col items-center bg-white p-5 shadow-md">
+          <img src="produto1.jpg" alt="Produto 1" class="w-full h-48 object-cover">
+          <h3 class="mt-4 text-lg font-semibold">Produto 1</h3>
+          <p class="mt-2 text-gray-600">R$ 100,00</p>
+        </div>
+        <div class="swiper-slide flex flex-col items-center bg-white p-5 shadow-md">
+          <img src="produto2.jpg" alt="Produto 2" class="w-full h-48 object-cover">
+          <h3 class="mt-4 text-lg font-semibold">Produto 2</h3>
+          <p class="mt-2 text-gray-600">R$ 200,00</p>
+        </div>
+        <div class="swiper-slide flex flex-col items-center bg-white p-5 shadow-md">
+          <img src="produto2.jpg" alt="Produto 2" class="w-full h-48 object-cover">
+          <h3 class="mt-4 text-lg font-semibold">Produto 2</h3>
+          <p class="mt-2 text-gray-600">R$ 200,00</p>
+        </div>
+
+
+
+        <!-- Adicione mais slides conforme necessário -->
+      </div>
+      <!-- Botões de navegação -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <!-- Paginação -->
+      <div class="swiper-pagination"></div>
+    </div>
+    <!--FIM CARROSSEL-->
   </main>
+
+  <!--COLOCANDO O SCRIPT DOS ÍCONES-->
+  <script src="https://kit.fontawesome.com/1b8606bd84.js" crossorigin="anonymous"></script>
 
   <script src="../../node_modules/swiper/swiper-bundle.js"></script>
   <script src="../scripts/carrossel.js"></script>
