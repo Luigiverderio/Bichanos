@@ -635,6 +635,10 @@ video {
   margin-bottom: 1.5rem;
 }
 
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
 .ml-4 {
   margin-left: 1rem;
 }
@@ -795,6 +799,10 @@ video {
   min-height: 35px;
 }
 
+.min-h-full {
+  min-height: 100%;
+}
+
 .w-1\/4 {
   width: 25%;
 }
@@ -887,6 +895,7 @@ video {
   width: 100vw;
 }
 
+<<<<<<< HEAD
 .w-2\/4 {
   width: 50%;
 }
@@ -895,10 +904,13 @@ video {
   width: 300px;
 }
 
+=======
+>>>>>>> 2a38c366065b84d18cd4d4d7864ba0f36a9d7f2b
 .max-w-\[600px\] {
   max-width: 600px;
 }
 
+<<<<<<< HEAD
 .max-w-1 {
   max-width: 0.25rem;
 }
@@ -927,6 +939,8 @@ video {
   max-width: 800px;
 }
 
+=======
+>>>>>>> 2a38c366065b84d18cd4d4d7864ba0f36a9d7f2b
 .flex-grow {
   flex-grow: 1;
 }
@@ -1254,6 +1268,11 @@ video {
   line-height: 2.5rem;
 }
 
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
 .text-\[1\.1rem\] {
   font-size: 1.1rem;
 }
@@ -1461,6 +1480,18 @@ video {
   color: rgb(29 78 216 / var(--tw-text-opacity));
 }
 
+#cardDogs h3{
+  height: 100px;
+}
+
+#cardCats h3{
+  height: 100px;
+}
+
+li{
+  cursor: none;
+}
+
 .hover\:scale-105:hover {
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
@@ -1489,5 +1520,9 @@ video {
 @media (min-width: 768px) {
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
