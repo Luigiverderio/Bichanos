@@ -18,42 +18,41 @@
 
 <body class="flex flex-col font-lato">
   <!--HEADER-->
-  <header class="w-full border-b-4 border-blue-700 py-12 flex-col flex paddingDosLados">
-    <!--LOGO + BARRA DE PESQUISA-->
-    <div class="w-full flex items-center gap-4 justify-between">
-      <a href="./index.html" class="" ><img src="../../assets/logo.png" alt="" class="w-[200px]"></a>
-      <!--BARRA DE PESQUISA-->
-      <div class="h-[50px] w-full flex items-center border-2 rounded-md bg-white gap-3 px-[1rem] max-w-[600px]">
-        <img src="../../assets/icons/search.png" alt="" class="w-auto h-[35px] min-h-[35px]">
-        <input type="text" class="h-full w-full focus:outline-none text-[1.1rem]"
-          placeholder="O que seu bichano precisa?">
-      </div>
-
-      <div class="flex items-center gap-4">
-        <a href=""><img src="../../assets/icons/Phone.svg" alt="" class="icon w-8 h-8"></a>
-        <a href=""><img src="../../assets/icons/Favorite.svg" alt="" class="icon w-8 h-8"></a>
-        <a href=""><img src="../../assets/icons/cesta.svg" alt="" class="icon w-8 h-8"></a>
-      </div>
+<header class="w-full border-b-4 border-blue-700 py-12 flex-col flex paddingDosLados">
+  <!--LOGO + BARRA DE PESQUISA-->
+  <div class="w-full flex items-center gap-4 justify-between">
+    <a href="./index.html" class="" ><img src="../../assets/logo.png" alt="" class="w-[250px]"></a>
+    <!--BARRA DE PESQUISA-->
+    <div class="h-[40px] w-full flex items-center border-2 rounded-md bg-white gap-3 px-[1rem] max-w-[600px]">
+      <img src="../../assets/icons/search.png" alt="" class="w-auto h-[35px] min-h-[35px]">
+      <input type="text" class="h-full w-full focus:outline-none text-[1.1rem]"
+        placeholder="O que seu bichano precisa?">
     </div>
-    <!--FIM LOGO + BARRA DE PESQUISA-->
 
-    <!--NavLinks + Contatos-->
-    <nav class="w-full flex items-center justify-between mt-4" id="NavLinks">
-      <ul class="flex gap-12  font-bold">
-        <li><a href="#">Cachorro</a></li>
-        <li><a href="#">Gato</a></li>
-        <li><a href="#">Plano Bichanos</a></li>
-        <li><a href="#">Sobre nós</a></li>
-        <li><a href="./index.html">Home</a></li>
-      </ul>
-      <ul class="flex items-center gap-12 font-bold">
-        <li><a href="">Login</a></li>
-        <li><a href="">Cadastro</a></li>
-      </ul>
-    </nav>
-    <!--FIM NavLinks + Contatos-->
-  </header>
-  <!--FIM HEADER-->
+    <div class="flex items-center gap-4">
+      <a href=""><img src="../../assets/icons/Phone.svg" alt="" class="icon w-8 h-8"></a>
+      <a href=""><img src="../../assets/icons/Favorite.svg" alt="" class="icon w-8 h-8"></a>
+      <a href=""><img src="../../assets/icons/cesta.svg" alt="" class="icon w-8 h-8"></a>
+    </div>
+  </div>
+  <!--FIM LOGO + BARRA DE PESQUISA-->
+
+  <!--NavLinks + Contatos-->
+  <nav class="w-full flex items-center justify-between mt-8 p-2" id="NavLinks">
+    <ul class="flex gap-12  font-bold">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="cachorro.html">Cães</a></li>
+      <li><a href="gato.html">Gatos</a></li>
+      <li><a href="#">Sobre nós</a></li>
+    </ul>
+    <ul class="flex items-center gap-12 font-bold">
+      <li><a href="">Login</a></li>
+      <li><a href="">Cadastro</a></li>
+    </ul>
+  </nav>
+  <!--FIM NavLinks + Contatos-->
+</header>
+<!--FIM HEADER-->
   <main class="paddingDosLados w-full">
 
     <section class="justify-center w-full flex gap-12 mt-12 ">
@@ -76,9 +75,11 @@
     <div class="swiper" id="swiper1">
       <div class="swiper-wrapper">
         <!-- Slides -->
-        <div class="swiper-slide"><img src="../../assets/Banner.png" alt=""></div>
-        <div class="swiper-slide"><img src="../../assets/Banner.png" alt=""></div>
-        <div class="swiper-slide"><img src="../../assets/Banner.png" alt=""></div>
+        <div class="swiper-slide"><img src="../../assets/banner1.png" alt="" id="imgbanner"></div>
+        <div class="swiper-slide"><img src="../../assets/banner2.png" alt="" id="imgbanner"></div>
+        <div class="swiper-slide"><img src="../../assets/Banner3.png" alt="" id="imgbanner"></div>
+        <div class="swiper-slide"><img src="../../assets/Banner4.png" alt="" id="imgbanner"></div>
+        <div class="swiper-slide"><img src="../../assets/Banner5.png" alt="" id="imgbanner"></div>
 
         <!-- Adicione mais slides conforme necessário -->
       </div>
@@ -102,37 +103,37 @@
         <div class="swiper-slide">
           <img src="../../assets/produtos/produto (1).png" alt="">
           <div>
-            <p>Nome do produto</p>
+            <p>Ração GranPlus para Gatos Adultos Castrados</p>
           </div>
-          <h1>R$50</h1>
+          <h1 class="font-bold mt-2">R$ 171,90</h1>
         </div>
         <div class="swiper-slide">
           <img src="../../assets/produtos/produto (2).png" alt="">
           <div>
-            <p>Nome do produto</p>
+            <p>Ração Golden Special para Cães Adultos</p>
           </div>
-          <h1>R$50</h1>
+          <h1 class="font-bold mt-2">R$ 149,99</h1>
         </div>
         <div class="swiper-slide">
           <img src="../../assets/produtos/produto (3).png" alt="">
           <div>
-            <p>Nome do produto</p>
+            <p>Antipulgas e Carrapatos Bravecto MSD para Cães</p>
           </div>
-          <h1>R$50</h1>
+          <h1 class="font-bold mt-2">R$ 238,40</h1>
+        </div>
+        <div class="swiper-slide">
+          <img src="../../assets/produtos/produto (4).png" alt="">
+          <div>
+            <p>Areia Higiênica Pipicat Classic para Gatos</p>
+          </div>
+          <h1 class="font-bold mt-2">R$ 41,90</h1>
         </div>
         <div class="swiper-slide">
           <img src="../../assets/produtos/produto (4).png" alt="">
           <div>
             <p>Nome do produto</p>
           </div>
-          <h1>R$50</h1>
-        </div>
-        <div class="swiper-slide">
-          <img src="../../assets/produtos/produto (4).png" alt="">
-          <div>
-            <p>Nome do produto</p>
-          </div>
-          <h1>R$50</h1>
+          <h1 class="font-bold mt-2">R$50</h1>
         </div>
       </div>
       <!-- Botões de navegação -->
@@ -154,35 +155,35 @@
           <div>
             <p>Nome do produto</p>
           </div>
-          <h1>R$50</h1>
+          <h1 class="font-bold">R$50</h1>
         </div>
         <div class="swiper-slide">
           <img src="../../assets/produtos/produto (2).png" alt="">
           <div>
             <p>Nome do produto</p>
           </div>
-          <h1>R$50</h1>
+          <h1 class="font-bold">R$50</h1>
         </div>
         <div class="swiper-slide">
           <img src="../../assets/produtos/produto (3).png" alt="">
           <div>
             <p>Nome do produto</p>
           </div>
-          <h1>R$50</h1>
+          <h1 class="font-bold">R$50</h1>
         </div>
         <div class="swiper-slide">
           <img src="../../assets/produtos/produto (4).png" alt="">
           <div>
             <p>Nome do produto</p>
           </div>
-          <h1>R$50</h1>
+          <h1 class="font-bold">R$50</h1>
         </div>
         <div class="swiper-slide">
           <img src="../../assets/produtos/produto (4).png" alt="">
           <div>
             <p>Nome do produto</p>
           </div>
-          <h1>R$50</h1>
+          <h1 class="font-bold">R$50</h1>
         </div>
       </div>
 

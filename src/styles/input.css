@@ -39,8 +39,13 @@
   width: 100%;
   margin-top: 3rem;
   display: flex;
-;
 }
+
+#swiper2 p{
+  height: 70px;
+}
+
+
 .swiper-slide{
   display: flex;
   align-items: center;
@@ -65,4 +70,8 @@
 }
 li{
   cursor: none;
+}
+
+#imgbanner{
+  @apply rounded-3xl
 }
