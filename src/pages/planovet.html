@@ -1,168 +1,475 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bichanos</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
-  <link rel="stylesheet" href="../styles/output.css">
-  <link rel="stylesheet" href="../styles/input.css">
-  <link rel="stylesheet" href="../styles/carrossel.css">
-  <link rel="stylesheet" href="../../node_modules/swiper/swiper-bundle.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bichanos</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+    <link rel="stylesheet" href="../styles/output.css" />
+    <link rel="stylesheet" href="../styles/input.css" />
+    <link rel="stylesheet" href="../styles/carrossel.css" />
+    <link rel="stylesheet" href="../../node_modules/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link
+      rel="shortcut icon"
+      href="../../assets/favicon.ico.png"
+      type="image/x-icon"
+    />
+  </head>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
     .content {
       max-width: 900px;
       margin: auto;
     }
   </style>
-</head>
 
-<body class="flex flex-col font-lato">
- <!--HEADER-->
- <header class="w-full border-b-4 border-blue-700 py-12 flex-col flex paddingDosLados">
-  <!--LOGO + BARRA DE PESQUISA-->
-  <div class="w-full flex items-center gap-4 justify-between">
-    <a href="./index.html" class="" ><img src="../../assets/logo.png" alt="" class="w-[250px]"></a>
-    <!--BARRA DE PESQUISA-->
-    <div class="h-[40px] w-full flex items-center border-2 rounded-md bg-white gap-3 px-[1rem] max-w-[600px]">
-      <img src="../../assets/icons/search.png" alt="" class="w-auto h-[35px] min-h-[35px]">
-      <input type="text" class="h-full w-full focus:outline-none text-[1.1rem]"
-        placeholder="O que seu bichano precisa?">
-    </div>
-
-    <div class="flex items-center gap-4">
-      <a href=""><img src="../../assets/icons/Phone.svg" alt="" class="icon w-8 h-8"></a>
-      <a href=""><img src="../../assets/icons/Favorite.svg" alt="" class="icon w-8 h-8"></a>
-      <a href=""><img src="../../assets/icons/cesta.svg" alt="" class="icon w-8 h-8"></a>
-    </div>
-  </div>
-  <!--FIM LOGO + BARRA DE PESQUISA-->
-
-  <!--NavLinks + Contatos-->
-  <nav class="w-full flex items-center justify-between mt-8 p-2" id="NavLinks">
-    <ul class="flex gap-12  font-bold">
-      <li><a href="./index.html">Home</a></li>
-      <li><a href="cachorro.html">Cães</a></li>
-      <li><a href="gato.html">Gatos</a></li>
-      <li><a href="#">Sobre nós</a></li>
-    </ul>
-    <ul class="flex items-center gap-12 font-bold">
-      <li><a href="">Login</a></li>
-      <li><a href="">Cadastro</a></li>
-    </ul>
-  </nav>
-  <!--FIM NavLinks + Contatos-->
-</header>
-<!--FIM HEADER-->
-
-  
-  <!--MAIN CONTENT-->
-  <main class="content mx-auto p-8">
-    <div class="bg-white shadow-md rounded-lg p-6 flex items-center gap-6">
-      <img src="/assets/planovet/imagem1.png" alt="Veterinário cuidando de um cachorro" class="w-60 h-68 rounded-md transform transition-transform duration-300 hover:scale-105">
-      <div class="flex flex-col justify-between h-full">
-        <div>
-          <h1 class="text-2xl font-bold mb-2">Aqui a saúde do seu bichano é garantida!</h1>
-          <p class="mb-4">Vacinas, consultas e exames com qualidade e carinho.</p>
+  <body class="flex flex-col font-lato">
+    <!--HEADER-->
+    <header
+      class="w-full border-b-4 border-blue-700 p-6 flex-col flex paddingDosLados max-w-[1700px] mx-auto"
+    >
+      <!--LOGO + BARRA DE PESQUISA-->
+      <div class="w-full flex items-center gap-4 justify-between max-cel:flex-col max-cel:scale-90">
+        <a href="./index.html" class=""
+          ><img src="../../assets/logo.png" alt="" class="w-[250px]"
+        /></a>
+        <!--BARRA DE PESQUISA-->
+        <div
+          class="h-[40px] w-full flex items-center border-2 rounded-md bg-white gap-3 px-[1rem] max-w-[600px]"
+           
+        >
+          <img
+            src="../../assets/icons/search.png"
+            alt=""
+            class="w-auto h-[35px] min-h-[35px]"
+          />
+          <input
+            type="text"
+            class="h-full w-full focus:outline-none text-[1.0rem]"
+            placeholder="O que seu bichano precisa?"
+          />
         </div>
-        <a href="https://petcare.com.br/" class="inline-flex items-center p-3 text-sm bg-yellow-400 text-black font-bold rounded-lg shadow-md w-[40%] gap-3 transform transition-transform duration-300 hover:scale-105"> <img src="/assets/planovet/gato.png" alt="" class="w-[20%] hoover:transform hover:scale-110">
-          Agendar &rarr;
-        </a>
+
+        <div class="flex items-center gap-4">
+          <a href=""
+            ><img
+              src="../../assets/icons/Phone.svg"
+              alt=""
+              class="icon w-8 h-8"
+          /></a>
+          <a href=""
+            ><img
+              src="../../assets/icons/Favorite.svg"
+              alt=""
+              class="icon w-8 h-8"
+          /></a>
+          <a href=""
+            ><img
+              src="../../assets/icons/cesta.svg"
+              alt=""
+              class="icon w-8 h-8"
+          /></a>
+        </div>
       </div>
-    </div>
-    <div class="mt-12">
-      <h2 class="text-xl font-bold mb-4">Serviços Oferecidos</h2>
-      <p class="mb-4">O apoio do veterinário é essencial para qualidade de vida do seu melhor amigo. Atendemos de forma acolhedora, sempre atentos às mais modernas práticas em medicina veterinária. Confira nossos centros integrados:</p>
-    </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!--FIM LOGO + BARRA DE PESQUISA-->
+
+      <!--NavLinks + Contatos-->
+      <nav
+        class="w-full flex items-center justify-between mt-8 p-2 max-cel:p-0 max-cel:justify-center"
+        id="NavLinks"
+      >
+        <!--NAV LINKS-->
+        <ul class="flex gap-4 items-center">
+          <!--ITEM NAV-->
+          <div class="flex items-center h-10 gap-2">
+            <img
+              src="../../assets/icons8-casa.svg"
+              alt=""
+              class="h-7 w-7 opacity-0 max-cel:hidden"
+              id="home-icon"
+            />
+            <a href="../pages/index.html" class="font-semibold" id="linkHome"
+              >Home</a
+            >
+          </div>
+          <!--ITEM NAV-->
+          <div class="flex items-center h-10 gap-2">
+            <img
+              src="../../assets/caozin.png"
+              alt=""
+              class="h-10 w-10 opacity-0 max-cel:hidden"
+              id="cachorro-icon"
+            />
+            <a
+              href="../pages/cachorro.html"
+              class="font-semibold"
+              id="linkCachorro"
+              >Cães</a
+            >
+          </div>
+          <!--ITEM NAV-->
+          <div class="flex items-center h-10 gap-2">
+            <img
+              src="../../assets/gatin.png"
+              alt=""
+              class="h-10 w-10 opacity-0 max-cel:hidden"
+              id="gato-icon"
+            />
+            <a href="../pages/gato.html" class="font-semibold" id="linkGato"
+              >Gatos</a
+            >
+          </div>
+          <!--ITEM NAV-->
+          <div class="flex items-center h-10 gap-2">
+            <img
+              src="../../assets/info.svg"
+              alt=""
+              class="opacity-0 h-5 w-5 max-cel:hidden"
+              id="sobre-icon"
+            />
+            <a href="../pages/sobre.html" class="font-semibold" id="linkSobre"
+              >Sobre Nós</a
+            >
+          </div>
+        </ul>
+        <ul class="flex gap-7 font-semibold max-cel:hidden">
+          <li><a href="./login/index.html">Cadastro</a></li>
+          <li><a href="./login/index.html">Login</a></li>
+        </ul>
+      </nav>
+      <!--FIM NavLinks + Contatos-->
+    </header>
+    <!--FIM HEADER-->
+
+    <!--MAIN CONTENT-->
+    <main class="content mx-auto p-8 w-full">
+      <section class="justify-center w-full flex gap-12 mt-12 max-cel:flex-col max-cel:items-center">
+        <a href="./planovet.html">
+          <li class="item">Planos Veterinários</li>
+        </a>
+        <a href="./adestramento.html">
+          <li class="item">Adestramento</li>
+        </a>
+        <a href="./banho.html">
+          <li class="item">Banho e Tosa</li>
+        </a>
+        <a href="./box.html">
+          <li class="item">Box Bichanos</li>
+        </a>
+      </section>
+
+      <div
+        data-aos="fade-right"
+        data-aos-delay="300"
+        class="bg-white shadow-md rounded-lg p-6 flex items-center gap-6 mt-12"
+      >
+        <img
+          src="/assets/planovet/imagem1.png"
+          alt="Veterinário cuidando de um cachorro"
+          class="w-60 h-68 rounded-md transform transition-transform duration-300 hover:scale-105"
+        />
+        <div class="flex flex-col justify-between h-full">
+          <div>
+            <h1 class="text-2xl font-bold mb-2">
+              Aqui a saúde do seu bichano é garantida!
+            </h1>
+            <p class="mb-4">
+              Vacinas, consultas e exames com qualidade e carinho.
+            </p>
+          </div>
+          <a
+            data-aos="zoom-in"
+            data-aos-delay="500"
+            href="https://petcare.com.br/"
+            class="inline-flex items-center p-3 text-sm bg-yellow-400 text-black font-bold rounded-lg shadow-md w-[40%] gap-3 transform transition-transform duration-300 hover:scale-105 max-cel:w-full"
+          >
+            <img
+              src="/assets/planovet/gato.png"
+              alt=""
+              class="w-[20%] hoover:transform hover:scale-110"
+            />
+            Agendar &rarr;
+          </a>
+        </div>
+      </div>
+      <div class="mt-12">
+        <h2 data-aos="fade-right" class="text-xl font-bold mb-4">
+          Serviços Oferecidos
+        </h2>
+        <p data-aos="fade-left" class="mb-4">
+          O apoio do veterinário é essencial para qualidade de vida do seu
+          melhor amigo. Atendemos de forma acolhedora, sempre atentos às mais
+          modernas práticas em medicina veterinária. Confira nossos centros
+          integrados:
+        </p>
+      </div>
+      <div class="grid grid-cols-2 max-cel:grid-cols-1 gap-8">
         <!-- Consultórios Card -->
-        <div class="bg-blue-100 shadow-md rounded-lg p-6 flex flex-col justify-between">
-          <img src="/assets/planovet/imagem2.png" alt="Consultório" class="w-full h-65 object-cover rounded-t-lg transform transition-transform duration-300 hover:scale-105">
+        <div
+          data-aos="fade-up"
+          class="bg-blue-100 shadow-md rounded-lg p-6 flex flex-col justify-between"
+        >
+          <img
+            src="/assets/planovet/imagem2.png"
+            alt="Consultório"
+            class="w-full h-65 object-cover rounded-t-lg transform transition-transform duration-300 hover:scale-105"
+          />
           <div class="p-4 mt-[1rem]">
-            <h2 class="text-2xl font-bold mb-2 flex items-center"><img src="/assets/planovet/cruz.svg" alt="" class="w-6 h-6 mr-2">Consultórios</h2>
+            <h2
+              data-aos="fade-up"
+              data-aos-delay="600"
+              class="text-2xl font-bold mb-2 flex items-center"
+            >
+              <img
+                src="/assets/planovet/cruz.svg"
+                alt=""
+                class="w-6 h-6 mr-2"
+              />Consultórios
+            </h2>
             <ul class="list-disc list-inside h-[12rem]">
-              <li>Clínico geral e especialidades</li>
-              <li>Check-up e vacinas</li>
-              <li>Microchipagem</li>
-              <li>Curativos</li>
-              <li>Exames de sangue e imagem</li>
-              <li>Orientação para filhotes</li>
+              <li data-aos="fade-up" data-aos-delay="650">
+                Clínico geral e especialidades
+              </li>
+              <li data-aos="fade-up" data-aos-delay="700">
+                Check-up e vacinas
+              </li>
+              <li data-aos="fade-up" data-aos-delay="750">Microchipagem</li>
+              <li data-aos="fade-up" data-aos-delay="800">Curativos</li>
+              <li data-aos="fade-up" data-aos-delay="850">
+                Exames de sangue e imagem
+              </li>
+              <li data-aos="fade-up" data-aos-delay="900">
+                Orientação para filhotes
+              </li>
             </ul>
-            <a href="https://petcare.com.br/" class="inline-flex items-center text-blue-700 font-bold hover:underline">
+            <a
+              data-aos="fade-right"
+              data-aos-delay="950"
+              href="https://petcare.com.br/"
+              class="inline-flex items-center text-blue-700 font-bold hover:underline"
+            >
               Mais Informações &rarr;
             </a>
           </div>
         </div>
         <!-- Clínicas Card -->
-        <div class="bg-yellow-100 shadow-md rounded-lg p-6">
-          <img src="/assets/planovet/imagem3.png" alt="Clínica" class="w-full h-65 object-cover rounded-t-lg transform transition-transform duration-300 hover:scale-105">
+        <div data-aos="fade-up" class="bg-yellow-100 shadow-md rounded-lg p-6">
+          <img
+            src="/assets/planovet/imagem3.png"
+            alt="Clínica"
+            class="w-full h-65 object-cover rounded-t-lg transform transition-transform duration-300 hover:scale-105"
+          />
           <div class="p-4 mt-[1rem]">
-            <h2 class="text-2xl font-bold mb-2 flex items-center"><img src="/assets/planovet/cruz.svg" alt="" class="w-6 h-6 mr-2">Clínicas</h2>
+            <h2
+              data-aos="fade-up"
+              data-aos-delay="600"
+              class="text-2xl font-bold mb-2 flex items-center"
+            >
+              <img
+                src="/assets/planovet/cruz.svg"
+                alt=""
+                class="w-6 h-6 mr-2"
+              />Clínicas
+            </h2>
             <ul class="list-disc list-inside h-[12rem]">
-              <li>Aparelho para anestesia inalatória</li>
-              <li>Cirurgias e internações de baixa e média complexidade</li>
+              <li data-aos="fade-up" data-aos-delay="650">
+                Aparelho para anestesia inalatória
+              </li>
+              <li data-aos="fade-up" data-aos-delay="700">
+                Cirurgias e internações de baixa e média complexidade
+              </li>
             </ul>
-            <a href="https://petcare.com.br/" class="inline-flex items-center text-yellow-500 font-bold hover:underline">
+            <a
+              data-aos="fade-right"
+              data-aos-delay="750"
+              href="https://petcare.com.br/"
+              target="_blank"
+              class="inline-flex items-center text-yellow-500 font-bold hover:underline"
+            >
               Mais Informações &rarr;
             </a>
           </div>
         </div>
       </div>
-      <div class="flex items-center gap-2 mb-16 mt-3">
-        <img src="/assets/planovet/info.svg" alt="Ícone de informação" class="w-4 h-4">
-        <p>Se o seu bichano precisar de atendimento especializado ou cirurgias, a PetCare oferece hospitais de qualidade.</p>
+      <div
+        data-aos="fade-right"
+        data-aos-delay="300"
+        class="flex items-center gap-2 mb-16 mt-3"
+      >
+        <img
+          src="/assets/planovet/info.svg"
+          alt="Ícone de informação"
+          class="w-4 h-4"
+        />
+        <p>
+          Se o seu bichano precisar de atendimento especializado ou cirurgias, a
+          PetCare oferece hospitais de qualidade.
+        </p>
       </div>
       <div class="rounded-lg flex items-center gap-6">
-        <img src="/assets/planovet/imagem4.png" alt="Veterinário cuidando de um cachorro" class="w-60 h-70 transform transition-transform duration-300 hover:scale-105">
+        <img
+          data-aos="fade-right"
+          data-aos-delay="300"
+          src="/assets/planovet/imagem4.png"
+          alt="Veterinário cuidando de um cachorro"
+          class="w-60 h-70 transform transition-transform duration-300 hover:scale-105"
+        />
         <div class="flex flex-col justify-between h-full">
           <div>
-            <h1 class="text-2xl font-bold mb-2">Cuidamos bem do seu bichano, pra ele cuidar bem de você!</h1>
+            <h1
+              data-aos="fade-left"
+              data-aos-delay="300"
+              class="text-2xl font-bold mb-2"
+            >
+              Cuidamos bem do seu bichano, pra ele cuidar bem de você!
+            </h1>
           </div>
         </div>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 mt-20 items-center">
+      <div class="grid grid-cols-2 max-cel:grid-cols-1 mt-20 items-center">
         <div class="flex flex-col">
-          <h3 class="text-2xl font-bold mb-4">Quando ir ao veterinário?</h3>
-          <p class="mb-4">Conte com a gente! Agende uma consulta para orientações sobre os cuidados necessários com o seu novo melhor amigo.</p>
-          <ul class="bg-gray-100 p-3 rounded-lg">
-            <li class="flex items-center mb-2"><img src="/assets/planovet/icone-confere.svg" alt="Check icon" class="w-5 h-5 mr-2 transform transition-transform duration-300 hover:scale-110">Check-up</li>
-            <li class="flex items-center mb-2"><img src="/assets/planovet/icone-confere.svg" alt="Check icon" class="w-5 h-5 mr-2 transform transition-transform duration-300 hover:scale-110">Protocolo de cuidados</li>
-            <li class="flex items-center mb-2"><img src="/assets/planovet/icone-confere.svg" alt="Check icon" class="w-5 h-5 mr-2 transform transition-transform duration-300 hover:scale-110">Vacinação</li>
-            <li class="flex items-center"><img src="/assets/planovet/icone-confere.svg" alt="Check icon" class="w-5 h-5 mr-2 transform transition-transform duration-300 hover:scale-110">Castração</li>
+          <h3
+            data-aos="fade-right"
+            data-aos-delay="300"
+            class="text-2xl font-bold mb-4"
+          >
+            Quando ir ao veterinário?
+          </h3>
+          <p data-aos="fade-left" data-aos-delay="400" class="mb-4">
+            Conte com a gente! Agende uma consulta para orientações sobre os
+            cuidados necessários com o seu novo melhor amigo.
+          </p>
+          <ul
+            data-aos="fade-left"
+            data-aos-delay="500"
+            class="bg-gray-100 p-3 rounded-lg"
+          >
+            <li
+              data-aos="fade-up"
+              data-aos-delay="850"
+              class="flex items-center mb-2"
+            >
+              <img
+                src="/assets/planovet/icone-confere.svg"
+                alt="Check icon"
+                class="w-5 h-5 mr-2 transform transition-transform duration-300 hover:scale-110"
+              />Check-up
+            </li>
+            <li
+              data-aos="fade-up"
+              data-aos-delay="900"
+              class="flex items-center mb-2"
+            >
+              <img
+                src="/assets/planovet/icone-confere.svg"
+                alt="Check icon"
+                class="w-5 h-5 mr-2 transform transition-transform duration-300 hover:scale-110"
+              />Protocolo de cuidados
+            </li>
+            <li
+              data-aos="fade-up"
+              data-aos-delay="950"
+              class="flex items-center mb-2"
+            >
+              <img
+                src="/assets/planovet/icone-confere.svg"
+                alt="Check icon"
+                class="w-5 h-5 mr-2 transform transition-transform duration-300 hover:scale-110"
+              />Vacinação
+            </li>
+            <li
+              data-aos="fade-up"
+              data-aos-delay="1000"
+              class="flex items-center"
+            >
+              <img
+                src="/assets/planovet/icone-confere.svg"
+                alt="Check icon"
+                class="w-5 h-5 mr-2 transform transition-transform duration-300 hover:scale-110"
+              />Castração
+            </li>
           </ul>
         </div>
-        <img src="/assets/planovet/imagem5.png" alt="Cachorro e gato juntos" class="w-90 h-80 rounded-lg transform transition-transform duration-300 hover:scale-105">
+        <img
+          data-aos="fade-left"
+          data-aos-delay="300"
+          src="/assets/planovet/imagem5.png"
+          alt="Cachorro e gato juntos"
+          class="w-90 h-80 rounded-lg transform transition-transform duration-300 hover:scale-105"
+        />
       </div>
-  </main>
-  <footer class="flex justify-between items-center  p-5 border-t-4 border-blue-700 mt-12">
-    <div class="flex flex-col items-center">
-      <span class="mb-2">Redes Sociais</span>
-      <div class="flex">
-        <img src="/assets/icons-footer/Facebook F.svg" alt="Facebook" class="w-8 h-8 mr-2">
-        <img src="/assets/icons-footer/Instagram.svg" alt="Instagram" class="w-8 h-8 mr-2">
-        <img src="/assets/icons-footer/YouTube.svg" alt="YouTube" class="w-8 h-8 mr-2">
-        <img src="/assets/icons-footer/TikTok.svg" alt="TikTok" class="w-8 h-8 mr-2">
+    </main>
+    <footer
+      class="flex justify-between items-center p-5 border-t-4 border-blue-700 mt-12"
+    >
+      <div class="flex flex-col items-center">
+        <span class="mb-2">Redes Sociais</span>
+        <div class="flex">
+          <img
+            src="/assets/icons-footer/Facebook F.svg"
+            alt="Facebook"
+            class="w-8 h-8 mr-2"
+          />
+          <img
+            src="/assets/icons-footer/Instagram.svg"
+            alt="Instagram"
+            class="w-8 h-8 mr-2"
+          />
+          <img
+            src="/assets/icons-footer/YouTube.svg"
+            alt="YouTube"
+            class="w-8 h-8 mr-2"
+          />
+          <img
+            src="/assets/icons-footer/TikTok.svg"
+            alt="TikTok"
+            class="w-8 h-8 mr-2"
+          />
+        </div>
       </div>
-    </div>
-    <div class="flex items-center">
-      <img src="/assets/logo-techno.svg" alt="TECHNO" class="w-24">
-    </div>
-    <div class="flex flex-col items-center">
-      <span class="mb-2">Meios de Pagamento</span>
-      <div class="flex">
-        <img src="/assets/icons-footer/visa.svg" alt="Visa" class="w-8 h-8 mr-2">
-        <img src="/assets/icons-footer/mastercard.svg" alt="Mastercard" class="w-8 h-8 mr-2">
-        <img src="/assets/icons-footer/elo.svg" alt="Elo" class="w-8 h-8 mr-2">
-        <img src="/assets/icons-footer/hipercard.svg" alt="Hipercard" class="w-8 h-8 mr-2">
-        <img src="/assets/icons-footer/pix.svg" alt="Pix" class="w-8 h-8 mr-2">
+      <div class="flex items-center">
+        <img src="/assets/logo-techno.svg" alt="TECHNO" class="w-24" />
       </div>
-    </div>
-  </footer>
-</body>
+      <div class="flex flex-col items-center">
+        <span class="mb-2">Meios de Pagamento</span>
+        <div class="flex">
+          <img
+            src="/assets/icons-footer/visa.svg"
+            alt="Visa"
+            class="w-8 h-8 mr-2"
+          />
+          <img
+            src="/assets/icons-footer/mastercard.svg"
+            alt="Mastercard"
+            class="w-8 h-8 mr-2"
+          />
+          <img
+            src="/assets/icons-footer/elo.svg"
+            alt="Elo"
+            class="w-8 h-8 mr-2"
+          />
+          <img
+            src="/assets/icons-footer/hipercard.svg"
+            alt="Hipercard"
+            class="w-8 h-8 mr-2"
+          />
+          <img
+            src="/assets/icons-footer/pix.svg"
+            alt="Pix"
+            class="w-8 h-8 mr-2"
+          />
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="../scripts/index.js"></script>
+  <script>
+    AOS.init({
+      once: true, // this will ensure animations trigger only once
+    });
+  </script>
 </html>
-
-
-

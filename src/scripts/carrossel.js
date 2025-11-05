@@ -1,5 +1,5 @@
 
-const swiper1 = new Swiper('#swiper1',{
+const swiper1 = new Swiper('#swiper1', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
@@ -22,7 +22,7 @@ const swiper1 = new Swiper('#swiper1',{
     shadowScale: 0.94,
   },
 });
-const swiper2 = new Swiper('#swiper2',{
+const swiper2 = new Swiper('#swiper2', {
   // Optional parameters
   direction: 'horizontal',
 
@@ -33,34 +33,50 @@ const swiper2 = new Swiper('#swiper2',{
   },
   slidesPerView: 4,
   spaceBetween: 30,
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10
+    },
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    640: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    }
+  }
 });
 
 
-  var swiper = new Swiper('#swiperAdestramento', {
+var swiper = new Swiper('#swiperAdestramento', {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    450: {
       slidesPerView: 1,
+    },
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 3,
       spaceBetween: 30,
-      loop: true,
-      pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-      },
-      navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-      },
-      breakpoints: {
-          640: {
-              slidesPerView: 2,
-              spaceBetween: 20,
-          },
-          768: {
-              slidesPerView: 3,
-              spaceBetween: 30,
-          },
-          1024: {
-              slidesPerView: 4,
-              spaceBetween: 40,
-          },
-      },
-  });
+    },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    },
+  },
+});
 

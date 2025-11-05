@@ -2,76 +2,145 @@
 @tailwind components;
 @tailwind utilities;
 
-/*Criando a classe container que aplica padding de 220px*/
-.paddingDosLados{
-  @apply px-[220px]
+/*Importando as fontes que são usadas no site*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+* {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s;
 }
 
+/*Criando a classe container que aplica padding de 220px*/
+.paddingDosLados {
+  @apply px-[220px];
+}
 
-.iconesAnimais{
-  @apply w-auto h-[35px] min-h-[35px]
-
+.iconesAnimais {
+  @apply w-auto h-[35px] min-h-[35px];
 }
 
 /*Criando a classe que aplica uma largura e altura para os icones*/
-.icon{
-  @apply w-auto h-[35px] min-h-[35px] min-w-[30px] hover:scale-125 transition-all
+.icon {
+  @apply w-auto h-[35px] min-h-[35px] min-w-[30px] hover:scale-125 transition-all;
 }
 /*Criando o estilo dos itens*/
-.item{
-  @apply text-[#0049A6] bg-[#FFF6DF] font-bold rounded-lg h-[60px] items-center flex justify-center w-[33%] hover:text-[#FFF6DF] hover:bg-[#0049A6] cursor-pointer hover:scale-110 transition-all min-w-[200px]
+.item {
+  @apply text-[#0049A6] bg-[#FFF6DF] font-bold rounded-lg h-[60px] items-center flex justify-center w-[33%] hover:text-[#FFF6DF] hover:bg-[#0049A6] cursor-pointer hover:scale-110 transition-all min-w-[200px];
 }
-.swiper-slide{
+.swiper-slide {
   display: flex;
   align-items: center;
-
 }
-#swiper1{
+#swiper1 {
   margin-top: 5rem;
   width: 100%;
-} 
+}
 
-#swiper1 img{
+#swiper1 img {
   text-align: center;
   width: 100%;
 }
-#swiper2{
+#swiper2 {
   width: 100%;
   margin-top: 3rem;
   display: flex;
 }
 
-#swiper2 p{
+#swiper2 p {
   height: 70px;
 }
 
-
-.swiper-slide{
+.swiper-slide {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.gatin{
+.gatin {
   width: 50px;
   height: 60px;
 }
 
-#NavLinks a{
-  @apply hover:text-blue-700
-
+#NavLinks a {
+  @apply hover:text-blue-700;
 }
 
-#cardDogs h3{
+#cardDogs h3 {
   height: 100px;
 }
 
-#cardCats h3{
+#cardCats h3 {
   height: 100px;
 }
-li{
+li {
   cursor: none;
 }
 
-#imgbanner{
-  @apply rounded-3xl
+#imgbanner {
+  @apply rounded-3xl;
+}
+
+/*Carrossel da pag Adestramento*/
+
+#swiperAdestramento {
+  width: 70%;
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & {
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      & {
+        img {
+          width: 90%;
+          height: 90%;
+        }
+      }
+    }
+  }
+}
+
+.hidden-transition {
+  animation: pop 0.1s ease-in-out;
+  opacity: 1;
+}
+.hidden-transition2 {
+  animation: pop2 0.1s ease-in-out;
+  opacity: 1;
+}
+
+/*Função que faz a animação de pop*/
+@keyframes pop {
+  0% {
+    height: 100%;
+  }
+  20% {
+    height: 140%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+@keyframes pop2 {
+  0% {
+    height: 100%;
+  }
+  20% {
+    scale: 1.1;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+@media (max-width: 850px) {
+  .paddingDosLados {
+    @apply px-[0px];
+  }
 }

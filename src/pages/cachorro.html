@@ -1,112 +1,502 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bichanos</title>
+    <link rel="stylesheet" href="../styles/output.css" />
+    <link rel="stylesheet" href="../styles/input.css" />
+    <link rel="stylesheet" href="../styles/carrossel.css" />
+    <link rel="stylesheet" href="../../node_modules/swiper/swiper-bundle.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bichanos</title>
-  <link rel="stylesheet" href="../styles/output.css">
-  <link rel="stylesheet" href="../styles/input.css">
-  <link rel="stylesheet" href="../styles/carrossel.css">
-  <link rel="stylesheet" href="../../node_modules/swiper/swiper-bundle.css" />
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
-  </style>
-</head>
+  <body class="flex flex-col font-lato">
+    <!--HEADER-->
+    <header
+      class="w-full border-b-4 border-blue-700 p-6 flex-col flex paddingDosLados max-w-[1700px] mx-auto"
+    >
+      <!--LOGO + BARRA DE PESQUISA-->
+      <div class="w-full flex items-center gap-4 justify-between max-cel:flex-col max-cel:scale-90">
+        <a href="./index.html" class=""
+          ><img src="../../assets/logo.png" alt="" class="w-[250px]"
+        /></a>
+        <!--BARRA DE PESQUISA-->
+        <div
+          class="h-[40px] w-full flex items-center border-2 rounded-md bg-white gap-3 px-[1rem] max-w-[600px]"
+           
+        >
+          <img
+            src="../../assets/icons/search.png"
+            alt=""
+            class="w-auto h-[35px] min-h-[35px]"
+          />
+          <input
+            type="text"
+            class="h-full w-full focus:outline-none text-[1.0rem]"
+            placeholder="O que seu bichano precisa?"
+          />
+        </div>
 
-<body class="flex flex-col font-lato">
-<!--HEADER-->
-<header class="w-full border-b-4 border-blue-700 py-12 flex-col flex paddingDosLados">
-    <!--LOGO + BARRA DE PESQUISA-->
-    <div class="w-full flex items-center gap-4 justify-between">
-      <a href="./index.html" class="" ><img src="../../assets/logo.png" alt="" class="w-[250px]"></a>
-      <!--BARRA DE PESQUISA-->
-      <div class="h-[40px] w-full flex items-center border-2 rounded-md bg-white gap-3 px-[1rem] max-w-[600px]">
-        <img src="../../assets/icons/search.png" alt="" class="w-auto h-[35px] min-h-[35px]">
-        <input type="text" class="h-full w-full focus:outline-none text-[1.1rem]"
-          placeholder="O que seu bichano precisa?">
+        <div class="flex items-center gap-4">
+          <a href=""
+            ><img
+              src="../../assets/icons/Phone.svg"
+              alt=""
+              class="icon w-8 h-8"
+          /></a>
+          <a href=""
+            ><img
+              src="../../assets/icons/Favorite.svg"
+              alt=""
+              class="icon w-8 h-8"
+          /></a>
+          <a href=""
+            ><img
+              src="../../assets/icons/cesta.svg"
+              alt=""
+              class="icon w-8 h-8"
+          /></a>
+        </div>
       </div>
+      <!--FIM LOGO + BARRA DE PESQUISA-->
 
-      <div class="flex items-center gap-4">
-        <a href=""><img src="../../assets/icons/Phone.svg" alt="" class="icon w-8 h-8"></a>
-        <a href=""><img src="../../assets/icons/Favorite.svg" alt="" class="icon w-8 h-8"></a>
-        <a href=""><img src="../../assets/icons/cesta.svg" alt="" class="icon w-8 h-8"></a>
+      <!--NavLinks + Contatos-->
+      <nav
+        class="w-full flex items-center justify-between mt-8 p-2 max-cel:p-0 max-cel:justify-center"
+        id="NavLinks"
+      >
+        <!--NAV LINKS-->
+        <ul class="flex gap-4 items-center">
+          <!--ITEM NAV-->
+          <div class="flex items-center h-10 gap-2">
+            <img
+              src="../../assets/icons8-casa.svg"
+              alt=""
+              class="h-7 w-7 opacity-0 max-cel:hidden"
+              id="home-icon"
+            />
+            <a href="../pages/index.html" class="font-semibold" id="linkHome"
+              >Home</a
+            >
+          </div>
+          <!--ITEM NAV-->
+          <div class="flex items-center h-10 gap-2">
+            <img
+              src="../../assets/caozin.png"
+              alt=""
+              class="h-10 w-10 opacity-0 max-cel:hidden"
+              id="cachorro-icon"
+            />
+            <a
+              href="../pages/cachorro.html"
+              class="font-semibold"
+              id="linkCachorro"
+              >Cães</a
+            >
+          </div>
+          <!--ITEM NAV-->
+          <div class="flex items-center h-10 gap-2">
+            <img
+              src="../../assets/gatin.png"
+              alt=""
+              class="h-10 w-10 opacity-0 max-cel:hidden"
+              id="gato-icon"
+            />
+            <a href="../pages/gato.html" class="font-semibold" id="linkGato"
+              >Gatos</a
+            >
+          </div>
+          <!--ITEM NAV-->
+          <div class="flex items-center h-10 gap-2">
+            <img
+              src="../../assets/info.svg"
+              alt=""
+              class="opacity-0 h-5 w-5 max-cel:hidden"
+              id="sobre-icon"
+            />
+            <a href="../pages/sobre.html" class="font-semibold" id="linkSobre"
+              >Sobre Nós</a
+            >
+          </div>
+        </ul>
+        <ul class="flex gap-7 font-semibold max-cel:hidden">
+          <li><a href="./login/index.html">Cadastro</a></li>
+          <li><a href="./login/index.html">Login</a></li>
+        </ul>
+      </nav>
+      <!--FIM NavLinks + Contatos-->
+    </header>
+    <!--FIM HEADER-->
+    <main>
+      <section class="justify-center w-full flex gap-12 mt-12 max-cel:flex-col max-cel:items-center">
+        <a href="./planovet.html">
+          <li class="item">Planos Veterinários</li>
+        </a>
+        <a href="./adestramento.html">
+          <li class="item">Adestramento</li>
+        </a>
+        <a href="./banho.html">
+          <li class="item">Banho e Tosa</li>
+        </a>
+        <a href="./box.html">
+          <li class="item">Box Bichanos</li>
+        </a>
+      </section>
+      <div class="container mx-auto px-32 py-20 max-cel:px-0" id="cardDogs">
+        <h1 class="text-5xl font-lilita text-blue-700 mb-8 text-center">
+          Cães
+        </h1>
+        <h2 class="text-4xl font-bold mb-6 mt-20 text-center">
+          Petiscos e Rações
+        </h2>
+        <div class="grid grid-cols-4 max-cel:grid-cols-1 gap-8 min-h-full">
+          <!--CARD-->
+          <div class="flex flex-col justify-between h-full mr-2">
+            <img
+              src="/assets/cachorro/prod1.png"
+              alt="Ração Golden Seleção Natural"
+              class=" mb-4"
+            />
+
+
+
+
+            <h3 class="text-lg">
+              Ração Golden Seleção Natural para Cães de Porte Médio
+            </h3>
+
+
+
+
+
+
+
+
+            
+            <p class="text-xl font-bold mt-2">
+              R$ 169,90
+              <button
+                class="p-2 bg-blue-600 text-white rounded-md mt-5 hover:scale-110 transition-all"
+              >
+                Adicionar ao carrinho
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+              </button>
+            </p>
+          </div>
+          <!--CARD-->
+          <div class="flex flex-col justify-between h-full mr-2">
+            <img
+              src="/assets/cachorro/prod2.png"
+              alt="Ração Golden Special"
+              class="w-full mb-4"
+            />
+            <h3 class="text-lg">
+              Ração Golden Special para Cães Adultos Sabor Frango e Carne
+            </h3>
+            <p class="text-xl font-bold mt-2">
+              R$ 149,99
+
+              <button
+                class="p-2 bg-blue-600 text-white rounded-md mt-5 hover:scale-110 transition-all"
+              >
+                Adicionar ao carrinho
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+              </button>
+            </p>
+          </div>
+          <!--CARD-->
+          <div class="flex flex-col justify-between h-full mr-2">
+            <img
+              src="/assets/cachorro/prod3.png"
+              alt="Ração Seca Royal Canin"
+              class="w-full mb-4"
+            />
+            <h3 class="text-lg">
+              Ração Seca Royal Canin Medium Puppy para Cães Filhotes
+            </h3>
+            <p class="text-xl font-bold mt-2">
+              R$ 126,70
+              <button
+                class="p-2 bg-blue-600 text-white rounded-md mt-5 hover:scale-110 transition-all"
+              >
+                Adicionar ao carrinho
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+              </button>
+            </p>
+          </div>
+          <!--CARD-->
+          <div class="flex flex-col justify-between h-full mr-2">
+            <img
+              src="/assets/cachorro/prod4.png"
+              alt="Ração Origens Raças Específicas"
+              class="w-full mb-4"
+            />
+            <h3 class="text-lg">
+              Ração Origens Raças Específicas para Bulldog Francês e Pug
+              Filhotes
+            </h3>
+            <p class="text-xl font-bold mt-2">
+              R$ 138,90
+              <button
+                class="p-2 bg-blue-600 text-white rounded-md mt-5 hover:scale-110 transition-all"
+              >
+                Adicionar ao carrinho
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+              </button>
+            </p>
+          </div>
+        </div>
+        <!--FIM SECTION PETISCOS-->
+        <h2 class="text-3xl font-bold mb-6 mt-20 text-center">Medicamentos</h2>
+        <div class="grid grid-cols-4 max-cel:grid-cols-1 gap-8 min-h-full">
+          <div class="flex flex-col justify-between h-full mr-2">
+            <img
+              src="/assets/cachorro/prod5.png"
+              alt="Ração Golden Seleção Natural"
+              class="w-full mb-4"
+            />
+            <h3 class="text-lg">Suplemento Avert Caninu's Protein 100g</h3>
+            <p class="text-xl font-bold mt-2">
+              R$ 76,99
+              <button
+                class="p-2 bg-blue-600 text-white rounded-md mt-5 hover:scale-110 transition-all"
+              >
+                Adicionar ao carrinho
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+              </button>
+            </p>
+          </div>
+          <div class="flex flex-col justify-between h-full mr-2">
+            <img
+              src="/assets/cachorro/prod6.png"
+              alt="Ração Golden Special"
+              class="w-full mb-4"
+            />
+            <h3 class="text-lg">
+              Antipulgas Simparic 20 mg para cães 5,1 a 10 kg - Zoetis
+            </h3>
+            <p class="text-xl font-bold mt-2">
+              R$ 109,90
+              <button
+                class="p-2 bg-blue-600 text-white rounded-md mt-5 hover:scale-110 transition-all"
+              >
+                Adicionar ao carrinho
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+              </button>
+            </p>
+          </div>
+          <div class="flex flex-col justify-between h-full mr-2">
+            <img
+              src="/assets/cachorro/prod7.png"
+              alt="Ração Seca Royal Canin"
+              class="w-full mb-4"
+            />
+            <h3 class="text-lg">
+              Antipulgas e Carrapatos Bravecto MSD para Cães
+            </h3>
+            <p class="text-xl font-bold mt-2">
+              R$ 238,40
+              <button
+                class="p-2 bg-blue-600 text-white rounded-md mt-5 hover:scale-110 transition-all"
+              >
+                Adicionar ao carrinho
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+              </button>
+            </p>
+          </div>
+          <div class="flex flex-col justify-between h-full mr-2">
+            <img
+              src="/assets/cachorro/prod8.png"
+              alt="Ração Origens Raças Específicas"
+              class="w-full mb-4"
+            />
+            <h3 class="text-lg">
+              Gaviz V Omeprazol 10mg Strip com 10 Comprimidos
+            </h3>
+            <p class="text-xl font-bold mt-2">
+              R$ 26,90
+              <button
+                class="p-2 bg-blue-600 text-white rounded-md mt-5 hover:scale-110 transition-all"
+              >
+                Adicionar ao carrinho
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+              </button>
+            </p>
+          </div>
+        </div>
+        <!--FIM SECTION MEDICAMENTOS-->
+      </div>
+      <!--FORMS-->
+      <div
+        class="mx-auto bg-[#FFF6DF] rounded-2xl shadow-md flex flex-col w-[700px] p-4"
+      >
+        <img src="../../assets/gatin.png" alt="" class="gatin self-end" />
+        <div class="flex flex-col items-center px-12">
+          <p class="font-bold text-2xl text-gray-700">
+            Cadastre-se e receba as melhores novidades!
+          </p>
+          <form class="w-full flex mt-10 gap-4">
+            <input
+              type="text"
+              placeholder="Seu email"
+              class="p-3 rounded-xl border-[#F2AC29] border-2 flex-grow"
+            />
+            <select
+              id="pet-select"
+              class="flex-grow p-3 border-[#F2AC29] border-2 rounded-xl text-gray-400"
+            >
+              <option value="" disabled selected class="text-gray-400">
+                Seu Pet
+              </option>
+              <option value="cachorro">Cachorro</option>
+              <option value="gato">Gato</option>
+              <option value="passaro">Macaco</option>
+              <option value="peixe">Peixe</option>
+            </select>
+          </form>
+          <button
+            class="bg-[#F2AC29] font-bold text-xl mt-5 p-4 rounded-md hover:scale-105 transition-all hover:opacity-70"
+            onclick="cadastrar(email, pet)"
+          >
+            CADASTRAR
+          </button>
+        </div>
+        <img src="../../assets/caozin.png" alt="" class="gatin self-start" />
+      </div>
+    </main>
+    <footer
+      class="flex justify-between items-center p-5 border-t-4 border-blue-700 mt-12"
+    >
+      <div class="flex flex-col items-center">
+        <span class="mb-2">Redes Sociais</span>
+        <div class="flex">
+          <img
+            src="/assets/icons-footer/Facebook F.svg"
+            alt="Facebook"
+            class="w-8 h-8 mr-2"
+          />
+          <img
+            src="/assets/icons-footer/Instagram.svg"
+            alt="Instagram"
+            class="w-8 h-8 mr-2"
+          />
+          <img
+            src="/assets/icons-footer/YouTube.svg"
+            alt="YouTube"
+            class="w-8 h-8 mr-2"
+          />
+          <img
+            src="/assets/icons-footer/TikTok.svg"
+            alt="TikTok"
+            class="w-8 h-8 mr-2"
+          />
+        </div>
+      </div>
+      <div class="flex items-center">
+        <img src="/assets/logo-techno.svg" alt="TECHNO" class="w-24" />
+      </div>
+      <div class="flex flex-col items-center">
+        <span class="mb-2">Meios de Pagamento</span>
+        <div class="flex">
+          <img
+            src="/assets/icons-footer/visa.svg"
+            alt="Visa"
+            class="w-8 h-8 mr-2"
+          />
+          <img
+            src="/assets/icons-footer/mastercard.svg"
+            alt="Mastercard"
+            class="w-8 h-8 mr-2"
+          />
+          <img
+            src="/assets/icons-footer/elo.svg"
+            alt="Elo"
+            class="w-8 h-8 mr-2"
+          />
+          <img
+            src="/assets/icons-footer/hipercard.svg"
+            alt="Hipercard"
+            class="w-8 h-8 mr-2"
+          />
+          <img
+            src="/assets/icons-footer/pix.svg"
+            alt="Pix"
+            class="w-8 h-8 mr-2"
+          />
+        </div>
+      </div>
+    </footer>
+
+      <!--MODAL-->
+  <div class="w-full h-screen relative flex justify-center hidden" id="modal">
+
+    <div class="bg-black opacity-35 fixed top-0 z-10 w-screen h-full"></div>
+    <div
+    class="bg-white fixed top-0 z-10 w-2/4 h-[500px] mt-[100px] max-cel:h-[300px] max-cel:mt-[300px] max-cel:w-3/4 flex">
+    
+    <div id="close-modal" class="absolute opacity-100 cursor-pointer right-0 mr-3 mt-3" >
+      <img src="../../assets/x-icon.svg" alt="">
+    </div>
+    
+      <div class="w-3/4 h-full py-12 px-8">
+        <!--IMAGEM DO PRODUTO -->
+        <div class="w-full h-full" id="produto-modal">
+          <img src="../../assets/produtos/produto (1).png" alt="" class="w-full h-full" />
+        </div>
+      </div>
+      <div class="w-2/3 h-full flex flex-col p-12">
+        <!--TEXTO-->
+        <h1 class="text-xl font-semibold w-full">
+          Ração GranPlus para Gatos Adultos Castrados Sabor Salmão e Arroz
+          10Kg
+        </h1>
+        <div class="flex items-center text-green-500 font-semibold" id="estoquie-text">
+          <div class="flex gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" height="10" width="10">
+              <path fill="#FFD43B"
+                d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" height="10" width="10">
+              <path fill="#FFD43B"
+                d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" height="10" width="10">
+              <path fill="#FFD43B"
+                d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" height="10" width="10">
+              <path fill="#FFD43B"
+                d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+            </svg>
+            <path fill="#FFD43B"
+              d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+            </svg>
+          </div>
+
+          | Em estoque
+        </div>
+        <h1 class="text-xl font-bold">R$150</h1>
+        <ul>
+          <li>- Indicada para gatos adultos</li>
+          <li>- Ideal para felinos castrados;</li>
+          <li>- Auxilia na manutenção do peso ideal;</li>
+          <li>- Ajuda na eliminação das bolas de pelo;</li>
+          <li>- Mantém o trato urinário saudável,</li>
+        </ul>
+        <button class="p-3 bg-blue-900 text-white mt-auto self-end rounded-xl hover:scale-110 ">Adicionar ao carrinho
+        </button>
       </div>
     </div>
-    <!--FIM LOGO + BARRA DE PESQUISA-->
-
-    <!--NavLinks + Contatos-->
-    <nav class="w-full flex items-center justify-between mt-8 p-2" id="NavLinks">
-      <ul class="flex gap-12  font-bold">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="cachorro.html">Cães</a></li>
-        <li><a href="gato.html">Gatos</a></li>
-        <li><a href="#">Sobre nós</a></li>
-      </ul>
-      <ul class="flex items-center gap-12 font-bold">
-        <li><a href="">Login</a></li>
-        <li><a href="">Cadastro</a></li>
-      </ul>
-    </nav>
-    <!--FIM NavLinks + Contatos-->
-  </header>
-  <!--FIM HEADER-->
-  <main>
-    <div class="container mx-auto p-8" id="cardDogs">
-        <h1 class="text-5xl font-lilita text-blue-700 mb-8 text-center mt-12">Cães</h1>
-        <h2 class="text-2xl font-bold mb-6 mt-20">Rações e Petiscos</h2>
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 min-h-full">
-          <div class="flex flex-col justify-between h-full mr-2">
-            <img src="/assets/cachorro/prod1.png" alt="Ração Golden Seleção Natural" class="w-full mb-4">
-            <h3 class="text-lg">Ração Golden Seleção Natural para Cães de Porte Médio</h3>
-            <p class="text-xl font-bold mt-2">R$ 169,90</p>
-          </div>
-          <div class="flex flex-col justify-between h-full mr-2">
-            <img src="/assets/cachorro/prod2.png" alt="Ração Golden Special" class="w-full mb-4">
-            <h3 class="text-lg">Ração Golden Special para Cães Adultos Sabor Frango e Carne</h3>
-            <p class="text-xl font-bold mt-2">R$ 149,99</p>
-          </div>
-          <div class="flex flex-col justify-between h-full mr-2">
-            <img src="/assets/cachorro/prod3.png" alt="Ração Seca Royal Canin" class="w-full mb-4">
-            <h3 class="text-lg">Ração Seca Royal Canin Medium Puppy para Cães Filhotes</h3>
-            <p class="text-xl font-bold mt-2">R$ 126,70</p>
-          </div>
-          <div class="flex flex-col justify-between h-full mr-2">
-            <img src="/assets/cachorro/prod4.png" alt="Ração Origens Raças Específicas" class="w-full mb-4">
-            <h3 class="text-lg">Ração Origens Raças Específicas para Bulldog Francês e Pug Filhotes</h3>
-            <p class="text-xl font-bold mt-2">R$ 138,90</p>
-          </div>
-        </div>
-        <h2 class="text-2xl font-bold mb-6 mt-20">Medicamentos</h2>
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 min-h-full">
-          <div class="flex flex-col justify-between h-full mr-2">
-            <img src="/assets/cachorro/prod5.png" alt="Ração Golden Seleção Natural" class="w-full mb-4">
-            <h3 class="text-lg">Suplemento Avert Caninu's Protein 100g</h3>
-            <p class="text-xl font-bold mt-2">R$ 76,99</p>
-          </div>
-          <div class="flex flex-col justify-between h-full mr-2">
-            <img src="/assets/cachorro/prod6.png" alt="Ração Golden Special" class="w-full mb-4">
-            <h3 class="text-lg">Antipulgas Simparic 20 mg para cães 5,1 a 10 kg - Zoetis</h3>
-            <p class="text-xl font-bold mt-2">R$ 109,90</p>
-          </div>
-          <div class="flex flex-col justify-between h-full mr-2">
-            <img src="/assets/cachorro/prod7.png" alt="Ração Seca Royal Canin" class="w-full mb-4">
-            <h3 class="text-lg">Antipulgas e Carrapatos Bravecto MSD para Cães</h3>
-            <p class="text-xl font-bold mt-2">R$ 238,40</p>
-          </div>
-          <div class="flex flex-col justify-between h-full mr-2">
-            <img src="/assets/cachorro/prod8.png" alt="Ração Origens Raças Específicas" class="w-full mb-4">
-            <h3 class="text-lg">Gaviz V Omeprazol 10mg Strip com 10 Comprimidos</h3>
-            <p class="text-xl font-bold mt-2">R$ 26,90</p>
-          </div>
-        </div>
-      </div>
-      
-      
-  </main>
-    
-</body>
-
+  </div>
+  <!--FIM MODAL-->
+    <script
+      src="https://kit.fontawesome.com/1b8606bd84.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--COLOCANDO O SCRIPT DO CARROSSEL-->
+    <script src="../../node_modules/swiper/swiper-bundle.js"></script>
+    <script src="../scripts/carrossel.js"></script>
+    <script src="../scripts/index.js"></script>
+  </body>
 </html>

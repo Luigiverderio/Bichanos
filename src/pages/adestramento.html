@@ -1,120 +1,419 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bichanos</title>
+    <link rel="stylesheet" href="../styles/output.css" />
+    <link rel="stylesheet" href="../styles/input.css" />
+    <link rel="stylesheet" href="../styles/carrossel.css" />
+    <link rel="stylesheet" href="../../node_modules/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link
+      rel="shortcut icon"
+      href="../../assets/favicon.ico.png"
+      type="image/x-icon"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bichanos</title>
-  <link rel="stylesheet" href="../styles/output.css">
-  <link rel="stylesheet" href="../styles/input.css">
-  <link rel="stylesheet" href="../styles/carrossel.css">
-  <link rel="stylesheet" href="../../node_modules/swiper/swiper-bundle.css" />
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
-  </style>
-</head>
-<!--HEADER-->
+  <body class="flex flex-col font-lato focus:outline-none justify-center">
+    <!--HEADER-->
+    <header
+      class="w-full border-b-4 border-blue-700 p-6 flex-col flex paddingDosLados max-w-[1700px] mx-auto"
+    >
+      <!--LOGO + BARRA DE PESQUISA-->
+      <div class="w-full flex items-center gap-4 justify-between max-cel:flex-col max-cel:scale-90">
+        <a href="./index.html" class=""
+          ><img src="../../assets/logo.png" alt="" class="w-[250px]"
+        /></a>
+        <!--BARRA DE PESQUISA-->
+        <div
+          class="h-[40px] w-full flex items-center border-2 rounded-md bg-white gap-3 px-[1rem] max-w-[600px]"
+           
+        >
+          <img
+            src="../../assets/icons/search.png"
+            alt=""
+            class="w-auto h-[35px] min-h-[35px]"
+          />
+          <input
+            type="text"
+            class="h-full w-full focus:outline-none text-[1.0rem]"
+            placeholder="O que seu bichano precisa?"
+          />
+        </div>
 
-<body>
-  <header class="w-full border-b-4 border-blue-700 py-12 flex-col flex paddingDosLados">
-    <!--LOGO + BARRA DE PESQUISA-->
-    <div class="w-full flex items-center gap-4 justify-between">
-      <a href="./index.html" class=""><img src="../../assets/logo.png" alt="" class="w-[250px]"></a>
-      <!--BARRA DE PESQUISA-->
-      <div class="h-[40px] w-full flex items-center border-2 rounded-md bg-white gap-3 px-[1rem] max-w-[600px]">
-        <img src="../../assets/icons/search.png" alt="" class="w-auto h-[35px] min-h-[35px]">
-        <input type="text" class="h-full w-full focus:outline-none text-[1.1rem]"
-          placeholder="O que seu bichano precisa?">
+        <div class="flex items-center gap-4">
+          <a href=""
+            ><img
+              src="../../assets/icons/Phone.svg"
+              alt=""
+              class="icon w-8 h-8"
+          /></a>
+          <a href=""
+            ><img
+              src="../../assets/icons/Favorite.svg"
+              alt=""
+              class="icon w-8 h-8"
+          /></a>
+          <a href=""
+            ><img
+              src="../../assets/icons/cesta.svg"
+              alt=""
+              class="icon w-8 h-8"
+          /></a>
+        </div>
       </div>
+      <!--FIM LOGO + BARRA DE PESQUISA-->
 
-      <div class="flex items-center gap-4">
-        <a href=""><img src="../../assets/icons/Phone.svg" alt="" class="icon w-8 h-8"></a>
-        <a href=""><img src="../../assets/icons/Favorite.svg" alt="" class="icon w-8 h-8"></a>
-        <a href=""><img src="../../assets/icons/cesta.svg" alt="" class="icon w-8 h-8"></a>
-      </div>
-    </div>
-    <!--FIM LOGO + BARRA DE PESQUISA-->
-
-    <!--NavLinks + Contatos-->
-    <nav class="w-full flex items-center justify-between mt-8 p-2" id="NavLinks">
-      <ul class="flex gap-12  font-bold">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="cachorro.html">Cães</a></li>
-        <li><a href="gato.html">Gatos</a></li>
-        <li><a href="#">Sobre nós</a></li>
-      </ul>
-      <ul class="flex items-center gap-12 font-bold">
-        <li><a href="">Login</a></li>
-        <li><a href="">Cadastro</a></li>
-      </ul>
-    </nav>
-    <!--FIM NavLinks + Contatos-->
-  </header>
-  <!--FIM HEADER-->
-
-  <!--MAIN-->
-  <main class="">
-
-
-    <!--PRIMEIRA PARTE-->
-
-    <div class="flex w-3/4 mx-auto p-10">
-      <div class="w-2/4">
-        <img src="../../assets/cao.png" alt="">
-      </div>
-      <div class="w-2/4 p-10">
-        <div class="font-bold text-3xl">Dê o primeiro passo para melhorar o comportamento do seu bichano</div>
-        <div class="py-2 max-w-[4]">Adestramento online e presencial para te ajudar a transformar a relação com o seu
-          melhor amigo.</div>
-        <a href="./erro404" target="_blank"
-          class="inline-flex items-center px-4 py-2 w-[50%] bg-[#F2AC29] font-bold rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105">
-          <img src="/assets/banho/cachorro.svg" alt="Icone de cachorro"
-            class="w-8 h-8 mr-2 transform transition-transform duration-300 hover:scale-110"> Agendar &rarr;
+      <!--NavLinks + Contatos-->
+      <nav
+        class="w-full flex items-center justify-between mt-8 p-2 max-cel:p-0 max-cel:justify-center"
+        id="NavLinks"
+      >
+        <!--NAV LINKS-->
+        <ul class="flex gap-4 items-center">
+          <!--ITEM NAV-->
+          <div class="flex items-center h-10 gap-2">
+            <img
+              src="../../assets/icons8-casa.svg"
+              alt=""
+              class="h-7 w-7 opacity-0 max-cel:hidden"
+              id="home-icon"
+            />
+            <a href="../pages/index.html" class="font-semibold" id="linkHome"
+              >Home</a
+            >
+          </div>
+          <!--ITEM NAV-->
+          <div class="flex items-center h-10 gap-2">
+            <img
+              src="../../assets/caozin.png"
+              alt=""
+              class="h-10 w-10 opacity-0 max-cel:hidden"
+              id="cachorro-icon"
+            />
+            <a
+              href="../pages/cachorro.html"
+              class="font-semibold"
+              id="linkCachorro"
+              >Cães</a
+            >
+          </div>
+          <!--ITEM NAV-->
+          <div class="flex items-center h-10 gap-2">
+            <img
+              src="../../assets/gatin.png"
+              alt=""
+              class="h-10 w-10 opacity-0 max-cel:hidden"
+              id="gato-icon"
+            />
+            <a href="../pages/gato.html" class="font-semibold" id="linkGato"
+              >Gatos</a
+            >
+          </div>
+          <!--ITEM NAV-->
+          <div class="flex items-center h-10 gap-2">
+            <img
+              src="../../assets/info.svg"
+              alt=""
+              class="opacity-0 h-5 w-5 max-cel:hidden"
+              id="sobre-icon"
+            />
+            <a href="../pages/sobre.html" class="font-semibold" id="linkSobre"
+              >Sobre Nós</a
+            >
+          </div>
+        </ul>
+        <ul class="flex gap-7 font-semibold max-cel:hidden">
+          <li><a href="./login/index.html">Cadastro</a></li>
+          <li><a href="./login/index.html">Login</a></li>
+        </ul>
+      </nav>
+      <!--FIM NavLinks + Contatos-->
+    </header>
+    <!--FIM HEADER-->
+    <main class="content mx-auto p-8">
+      <section class="justify-center w-full flex gap-12 mt-12 max-cel:flex-col max-cel:items-center">
+        <a href="./planovet.html">
+          <li class="item">Planos Veterinários</li>
         </a>
+        <a href="./adestramento.html">
+          <li class="item">Adestramento</li>
+        </a>
+        <a href="./banho.html">
+          <li class="item">Banho e Tosa</li>
+        </a>
+        <a href="./box.html">
+          <li class="item">Box Bichanos</li>
+        </a>
+      </section>
+
+      <!--PRIMEIRA PARTE-->
+
+      <div class="flex w-3/4 mx-auto p-10 mt-10">
+        <div class="w-2/4" data-aos="fade-right" data-aos-delay="500">
+          <img src="../../assets/cao.png" alt="" />
+        </div>
+        <div class="w-2/4 p-10">
+          <div
+            class="font-bold text-3xl"
+            data-aos="fade-left"
+            data-aos-delay="300"
+          >
+            Dê o primeiro passo para melhorar o comportamento do seu bichano
+          </div>
+          <div class="py-2 max-w-[4]" data-aos="fade-left" data-aos-delay="300">
+            Adestramento online e presencial para te ajudar a transformar a
+            relação com o seu melhor amigo.
+          </div>
+          <a
+            href="https://landingpage.petz.com.br/adestramento/"
+            target="_blank"
+            class="inline-flex items-center px-4 py-2 w-[50%] bg-[#F2AC29] font-bold rounded-lg shadow-md duration-300"
+            data-aos="fade-left"
+            data-aos-delay="400"
+            ;
+          >
+            <img
+              src="/assets/banho/cachorro.svg"
+              alt="Icone de cachorro"
+              class="w-8 h-8 mr-2 transform transition-transform duration-300 hover:scale-110"
+            />
+            Conhecer &rarr;
+          </a>
+        </div>
       </div>
-    </div>
 
-    <!--SEGUNDA PARTE-->
+      <!--SEGUNDA PARTE-->
 
-    <p class="font-bold text-3xl text-center mt-16">Produtos que vão facilitar o adestramento</p>
+      <p class="font-bold text-3xl text-center mt-16">
+        Produtos que vão facilitar o adestramento
+      </p>
 
-    <!--CARROSSEL-->
-    <div class="swiper" id="swiperAdestramento">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide flex flex-col items-center bg-white p-5 shadow-md">
-          <img src="produto1.jpg" alt="Produto 1" class="w-full h-48 object-cover">
-          <h3 class="mt-4 text-lg font-semibold">Produto 1</h3>
-          <p class="mt-2 text-gray-600">R$ 100,00</p>
+      <div class="flex flex-col justify-center">
+        <!--CARROSSEL-->
+        <div class="swiper" id="swiperAdestramento">
+          <div class="swiper-wrapper">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="300"
+              class="swiper-slide flex flex-col items-center bg-white p-5 shadow-md"
+            >
+              <img
+                src="../../assets/banners-adestramento/Rectangle 51.png"
+                alt="Produto 1"
+                class="w-full h-48 object-cover"
+              />
+              <h3 class="mt-4 text-lg font-semibold">Xixi no tapetinho</h3>
+              <p class="mt-2 text-gray-600">R$ 39,00</p>
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-delay="350"
+              class="swiper-slide flex flex-col items-center bg-white p-5 shadow-md</div>"
+            >
+              <img
+                src="../../assets/banners-adestramento/Rectangle 55.png"
+                alt="Produto 1"
+                class="w-full h-48 object-cover"
+              />
+              <h3 class="mt-4 text-lg font-semibold">Xô Ansiedade!</h3>
+              <p class="mt-2 text-gray-600">R$ 60,00</p>
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-delay="400"
+              class="swiper-slide flex flex-col items-center bg-white p-5 shadow-md</div>"
+            >
+              <img
+                src="../../assets/banners-adestramento/Rectangle 56.png"
+                alt="Produto 1"
+                class="w-full h-48 object-cover"
+              />
+              <h3 class="mt-4 text-lg font-semibold">Boa Garoto!</h3>
+              <p class="mt-2 text-gray-600">R$ 15,70</p>
+            </div>
+            <div
+            data-aos="fade-up"
+            data-aos-delay="400"
+              class="swiper-slide flex flex-col items-center bg-white p-5 shadow-md</div"
+            >
+              <img
+                src="../../assets/banners-adestramento/Rectangle 57.png"
+                alt="Produto 1"
+                class="w-full h-48 object-cover"
+              />
+              <h3 class="mt-4 text-lg font-semibold">Hora do Passeio</h3>
+              <p class="mt-2 text-gray-600">R$ 43,80</p>
+            </div>
+            <!-- Adicione mais slides conforme necessário -->
+          </div>
+          <!-- Botões de navegação</div> -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <!-- Paginação -->
+          <div class="swiper-pagination"></div>
         </div>
-        <div class="swiper-slide flex flex-col items-center bg-white p-5 shadow-md">
-          <img src="produto2.jpg" alt="Produto 2" class="w-full h-48 object-cover">
-          <h3 class="mt-4 text-lg font-semibold">Produto 2</h3>
-          <p class="mt-2 text-gray-600">R$ 200,00</p>
+        <!--FIM CARROSSEL-->
+        <div class=" rounded-lg p-6 flex items-center mt-20 justify-center"
+        >
+          <div class="w-1/2 bg-gray-100 p-6 rounded-lg flex flex-col"
+          data-aos="fade-right"
+          data-aos-delay="400">
+            <h1 class="text-2xl font-bold mb-4"
+            >Mitos sobre o adestramento</h1>
+            <ul class="list-none">
+              <li class="flex items-center mb-2">
+                <span class="text-red-500 text-xl mr-2">✗</span>
+                <span>Pets adultos não conseguem ser adestrados</span>
+              </li>
+              <li class="flex items-center mb-2">
+                <span class="text-red-500 text-xl mr-2">✗</span>
+                <span>O adestramento é só para animais de grande porte</span>
+              </li>
+              <li class="flex items-center mb-2">
+                <span class="text-red-500 text-xl mr-2">✗</span>
+                <span>Nem todas as raças aprendem</span>
+              </li>
+              <li class="flex items-center">
+                <span class="text-red-500 text-xl mr-2">✗</span>
+                <span>O animal terá um comportamento robotizado</span>
+              </li>
+            </ul>
+          </div>
+            <img src="../../assets/cachorro-ades.png" alt="Dog with glasses" class="w-80 h-90 rounded-lg justify-self-end-end transform transition-transform duration-300 hover:scale-105"
+            data-aos="fade-left"
+            data-aos-delay="300">
         </div>
-        <div class="swiper-slide flex flex-col items-center bg-white p-5 shadow-md">
-          <img src="produto2.jpg" alt="Produto 2" class="w-full h-48 object-cover">
-          <h3 class="mt-4 text-lg font-semibold">Produto 2</h3>
-          <p class="mt-2 text-gray-600">R$ 200,00</p>
+
+        <section class="bg-yellow-100 rounded-lg text-center w-[800px] m-auto p-12 mt-20"
+        data-aos="fade-up"
+        data-aos-delay="500">
+          <h2 class="text-2xl font-bold mb-2 w-auto">
+            Conheça nosso serviço de adestramento
+          </h2>
+          <p class="mb-4">
+            Tenha o acompanhamento de um adestrador durante toda a jornada com o
+            seu bichano.
+          </p>
+          <div class="flex justify-around">
+            <!-- Card Presencial -->
+            <div
+              class="bg-white p-6 rounded-lg shadow-md text-center flex flex-col items-center w-60 transform transition-transform duration-300 hover:scale-105"
+            >
+              <h3 class="text-2xl font-bold mb-2 font-lilita text-blue-800">
+                Presencial
+              </h3>
+              <a href="https://buscacep.com.br/" target="_blank"
+                ><p class="mb-2 hover:underline">
+                  Confira a disponibilidade <br />
+                  para o seu cep &rarr;
+                </p></a
+              >
+              <p class="mb-2">Aula uma vez por semana</p>
+              <p class="mb-2">Duração: 40 minutos</p>
+              <p class="text-2xl font-lilita mt-4 text-blue-800">R$400,00</p>
+              <p>por mês</p>
+              
+            </div>
+            <!-- Card Online -->
+            <div
+              class="bg-white p-6 rounded-lg shadow-md text-center flex flex-col items-center w-60 transform transition-transform duration-300 hover:scale-105"
+            >
+              <h3 class="text-2xl font-bold mb-2 font-lilita text-blue-800">
+                Online
+              </h3>
+              <p class="mb-2">Disponível para todo Brasil</p>
+              <p class="mb-2">Aula uma vez por semana</p>
+              <p class="mb-2">Duração: 40 minutos</p>
+              <p class="text-2xl font-lilita mt-4 text-blue-800">R$300,00</p>
+              <p>por mês</p>
+            </div>
+          </div>
+          <a href="https://landingpage.petz.com.br/adestramento/" target="_blank"><button class="mt-8 bg-blue-800 text-white px-4 py-2 rounded-lg transform transition-transform duration-300 hover:scale-110">Agendar Agora &rarr;</button></a>
+        </section>
+  
+    </main>
+    <!--FOOTER-->
+    <footer
+      class="flex justify-between items-center p-5 border-t-4 border-blue-700 mt-12"
+    >
+      <div class="flex flex-col items-center">
+        <span class="mb-2">Redes Sociais</span>
+        <div class="flex">
+          <img
+            src="/assets/icons-footer/Facebook F.svg"
+            alt="Facebook"
+            class="w-8 h-8 mr-2"
+          />
+          <img
+            src="/assets/icons-footer/Instagram.svg"
+            alt="Instagram"
+            class="w-8 h-8 mr-2"
+          />
+          <img
+            src="/assets/icons-footer/YouTube.svg"
+            alt="YouTube"
+            class="w-8 h-8 mr-2"
+          />
+          <img
+            src="/assets/icons-footer/TikTok.svg"
+            alt="TikTok"
+            class="w-8 h-8 mr-2"
+          />
         </div>
-
-
-
-        <!-- Adicione mais slides conforme necessário -->
       </div>
-      <!-- Botões de navegação -->
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-      <!-- Paginação -->
-      <div class="swiper-pagination"></div>
-    </div>
-    <!--FIM CARROSSEL-->
-  </main>
-
+      <div class="flex items-center">
+        <img src="/assets/logo-techno.svg" alt="TECHNO" class="w-24" />
+      </div>
+      <div class="flex flex-col items-center">
+        <span class="mb-2">Meios de Pagamento</span>
+        <div class="flex">
+          <img
+            src="/assets/icons-footer/visa.svg"
+            alt="Visa"
+            class="w-8 h-8 mr-2"
+          />
+          <img
+            src="/assets/icons-footer/mastercard.svg"
+            alt="Mastercard"
+            class="w-8 h-8 mr-2"
+          />
+          <img
+            src="/assets/icons-footer/elo.svg"
+            alt="Elo"
+            class="w-8 h-8 mr-2"
+          />
+          <img
+            src="/assets/icons-footer/hipercard.svg"
+            alt="Hipercard"
+            class="w-8 h-8 mr-2"
+          />
+          <img
+            src="/assets/icons-footer/pix.svg"
+            alt="Pix"
+            class="w-8 h-8 mr-2"
+          />
+        </div>
+      </div>
+    </footer>
+    <!--FIM FOOTER-->
+  </body>
   <!--COLOCANDO O SCRIPT DOS ÍCONES-->
-  <script src="https://kit.fontawesome.com/1b8606bd84.js" crossorigin="anonymous"></script>
+  <script
+    src="https://kit.fontawesome.com/1b8606bd84.js"
+    crossorigin="anonymous"
+  ></script>
 
   <script src="../../node_modules/swiper/swiper-bundle.js"></script>
   <script src="../scripts/carrossel.js"></script>
-</body>
+  <script src="../scripts/index.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true, // this will ensure animations trigger only once
+    });
+  </script>
+</html>

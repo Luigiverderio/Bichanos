@@ -1,4 +1,5 @@
 # Bichanos Pet Shop
+
 Bem-vindo ao Bichanos Pet Shop! Estamos dedicados a fornecer produtos e serviços de alta qualidade para garantir o bem-estar dos seus amados animais de estimação.
 
 ## Sobre Nós
@@ -26,6 +27,7 @@ Oferecemos uma ampla variedade de produtos para pets de alta qualidade, incluind
 Visite-nos em nossa loja localizada em [...]. Fique à vontade para entrar em contato conosco pelo telefone [()...] ou pelo email [...@...] para qualquer dúvida ou para agendar um horário.
 
 Estamos ansiosos para atendê-lo e aos seus amigos peludos no Bichanos Pet Shop!
+
 ## Horário de Funcionamento
 
 Nosso pet shop Bichanos está aberto de segunda a sábado, das 9h às 18h. Estamos prontos para atender você e seu pet em qualquer momento durante esse horário.

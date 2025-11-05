@@ -8,6 +8,9 @@ module.exports = {
         lilita: ['Lilita One', 'sans-serif'],
       },
     },
+    screens: {
+      'max-cel': { 'max': '450px' }, // Adiciona um breakpoint para telas com largura máxima de 400px
+    }
   },
   plugins: [],
 }

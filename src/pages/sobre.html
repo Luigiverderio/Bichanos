@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bichanos</title>
+    <link rel="stylesheet" href="../styles/output.css" />
+    <link rel="stylesheet" href="../styles/input.css" />
+    <link rel="stylesheet" href="../styles/carrossel.css" />
+    <link rel="stylesheet" href="../../node_modules/swiper/swiper-bundle.css" />
+    <link
+      rel="shortcut icon"
+      href="../../assets/favicon.ico.png"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body class="flex flex-col font-lato">
+    <!--HEADER-->
+    <header
+      class="w-full border-b-4 border-blue-700 p-6 flex-col flex paddingDosLados max-w-[1700px] mx-auto"
+    >
+      <!--LOGO + BARRA DE PESQUISA-->
+      <div
+        class="w-full flex items-center gap-4 justify-between max-cel:flex-col max-cel:scale-90"
+      >
+        <a href="./index.html" class=""
+          ><img src="../../assets/logo.png" alt="" class="w-[250px]"
+        /></a>
+        <!--BARRA DE PESQUISA-->
+        <div
+          class="h-[40px] w-full flex items-center border-2 rounded-md bg-white gap-3 px-[1rem] max-w-[600px]"
+        >
+          <img
+            src="../../assets/icons/search.png"
+            alt=""
+            class="w-auto h-[35px] min-h-[35px]"
+          />
+
+          <input
+            type="text"
+            class="h-full w-full focus:outline-none text-[1.0rem]"
+            placeholder="O que seu bichano precisa?"
+          />
+        </div>
+
+        <div class="flex items-center gap-4">
+          <a href=""
+            ><img
+              src="../../assets/icons/Phone.svg"
+              alt=""
+              class="icon w-8 h-8"
+          /></a>
+          <a href=""
+            ><img
+              src="../../assets/icons/Favorite.svg"
+              alt=""
+              class="icon w-8 h-8"
+          /></a>
+          <a href=""
+            ><img
+              src="../../assets/icons/cesta.svg"
+              alt=""
+              class="icon w-8 h-8"
+          /></a>
+        </div>
+      </div>
+      <!--FIM LOGO + BARRA DE PESQUISA-->
+
+      <!--NavLinks + Contatos-->
+      <nav
+        class="w-full flex items-center justify-between mt-8 p-2 max-cel:p-0 max-cel:justify-center"
+        id="NavLinks"
+      >
+        <!--NAV LINKS-->
+        <ul class="flex gap-4 items-center">
+          <!--ITEM NAV-->
+          <div class="flex items-center h-10 gap-2">
+            <img
+              src="../../assets/icons8-casa.svg"
+              alt=""
+              class="h-7 w-7 opacity-0 max-cel:hidden"
+              id="home-icon"
+            />
+            <a href="../pages/index.html" class="font-semibold" id="linkHome"
+              >Home</a
+            >
+          </div>
+          <!--ITEM NAV-->
+          <div class="flex items-center h-10 gap-2">
+            <img
+              src="../../assets/caozin.png"
+              alt=""
+              class="h-10 w-10 opacity-0 max-cel:hidden"
+              id="cachorro-icon"
+            />
+            <a
+              href="../pages/cachorro.html"
+              class="font-semibold"
+              id="linkCachorro"
+              >Cães</a
+            >
+          </div>
+          <!--ITEM NAV-->
+          <div class="flex items-center h-10 gap-2">
+            <img
+              src="../../assets/gatin.png"
+              alt=""
+              class="h-10 w-10 opacity-0 max-cel:hidden"
+              id="gato-icon"
+            />
+            <a href="../pages/gato.html" class="font-semibold" id="linkGato"
+              >Gatos</a
+            >
+          </div>
+          <!--ITEM NAV-->
+          <div class="flex items-center h-10 gap-2">
+            <img
+              src="../../assets/info.svg"
+              alt=""
+              class="opacity-0 h-5 w-5 max-cel:hidden"
+              id="sobre-icon"
+            />
+            <a href="../pages/sobre.html" class="font-semibold" id="linkSobre"
+              >Sobre Nós</a
+            >
+          </div>
+        </ul>
+        <ul class="flex gap-7 font-semibold max-cel:hidden">
+          <li><a href="./login/index.html">Cadastro</a></li>
+          <li><a href="./login/index.html">Login</a></li>
+        </ul>
+      </nav>
+      <!--FIM NavLinks + Contatos-->
+    </header>
+    <!--FIM HEADER-->
+    <main class="paddingDosLados w-full">
+      <section
+        class="justify-center w-full flex gap-12 mt-12 max-cel:flex-col max-cel:items-center"
+      >
+        <a href="./planovet.html">
+          <li class="item">Planos Veterinários</li>
+        </a>
+        <a href="./adestramento.html">
+          <li class="item">Adestramento</li>
+        </a>
+        <a href="./banho.html">
+          <li class="item">Banho e Tosa</li>
+        </a>
+        <a href="./box.html">
+          <li class="item">Box Bichanos</li>
+        </a>
+      </section>
+      <h1 class="text-5xl font-lilita text-blue-700 my-8 text-center mt-20">
+        Nosso propósito
+      </h1>
+      <div class="max-w-4xl mx-auto mt-10 p-6 bg-white rounded-lg shadow-md">
+        <div class="flex flex-col lg:flex-row items-center lg:items-start">
+          <img
+            src="/assets/img-sobre.png"
+            alt="Dog and Cat"
+            class="w-90 h-100 lg:w-1/2 rounded-lg mb-4 lg:mb-0 lg:mr-4 transform transition-transform duration-300 hover:scale-105"
+          />
+          <h2 class="text-3xl font-lilita text-blue-700 mb-4">
+            Bichanos, seu pet em boas patas!
+          </h2>
+          <div class="mt-4">
+            <p class="text-lg mb-4">
+              Na Bichanos, nossa missão é proporcionar o melhor para os seus
+              amigos de quatro patas. Desde 2024, temos orgulho em oferecer uma
+              ampla variedade de produtos e serviços de alta qualidade para
+              garantir a saúde, o bem-estar e a felicidade dos seus pets.
+            </p>
+            <p class="text-lg">
+              Tudo começou com uma paixão por animais. Fundada por amantes de
+              pets, a Bichanos nasceu do desejo de criar um lugar onde os donos
+              de animais de estimação pudessem encontrar tudo o que precisam em
+              um único local, com um atendimento personalizado e especializado.
+            </p>
+          </div>
+        </div>
+      </div>
+      <hr class="mt-12" />
+      <section class="max-w-4xl mx-auto mt-10 p-6 bg-white rounded-lg">
+        <h2 class="text-2xl font-bold mb-4 text-center">Visão e Missão:</h2>
+        <div class="space-y-4">
+          <div
+            class="bg-yellow-100 p-4 rounded-md transform transition-transform duration-300 hover:scale-105"
+          >
+            <p>
+              1. Criar valor na interação com os apaixonados por animais de
+              estimação, potencializando o bem da relação entre o pet e sua
+              família.
+            </p>
+          </div>
+          <div
+            class="bg-yellow-100 p-4 rounded-md transform transition-transform duration-300 hover:scale-105"
+          >
+            <p>
+              2. Ser mundialmente reconhecido como melhor ecossistema do
+              segmento pet até 2025.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Valores -->
+      <section class="max-w-4xl mx-auto mt-10 p-6 bg-white rounded-lg">
+        <h2 class="text-2xl font-bold mb-4 text-center">Valores</h2>
+        <div class="flex flex-wrap justify-center gap-4">
+          <div
+            class="bg-blue-700 text-white px-4 py-2 rounded-md shadow-md transform transition-transform duration-300 hover:scale-105"
+          >
+            <p>Somos apaixonados por pets</p>
+          </div>
+          <div
+            class="bg-blue-700 text-white px-4 py-2 rounded-md shadow-md transform transition-transform duration-300 hover:scale-105"
+          >
+            <p>Encantamos nossos clientes</p>
+          </div>
+          <div
+            class="bg-blue-700 text-white px-4 py-2 rounded-md shadow-md transform transition-transform duration-300 hover:scale-105"
+          >
+            <p>Respeitamos uns aos outros</p>
+          </div>
+          <div
+            class="bg-blue-700 text-white px-4 py-2 rounded-md shadow-md transform transition-transform duration-300 hover:scale-105"
+          >
+            <p>Temos prazer em servir</p>
+          </div>
+          <div
+            class="bg-blue-700 text-white px-4 py-2 rounded-md shadow-md transform transition-transform duration-300 hover:scale-105"
+          >
+            <p>Reconhecemos esforços, premiamos resultados</p>
+          </div>
+        </div>
+      </section>
+      <hr class="mt-12" />
+      <section class="mt-12 p-8 bg-yellow-100 rounded-lg text-center">
+        <gmp-map-3d center="37.841157, -122.551679" tilt="67.5"></gmp-map-3d>
+        <a
+          href="https://www.google.com.br/maps/@-21.2560181,-48.5031053,14z?entry=ttu"
+          ><p class="mt-4 hover:underline">
+            Vá a loja física mais perto de você &rarr;
+          </p>
+        </a>
+      </section>
+    </main>
+
+    <footer
+      class="flex justify-between items-center p-5 border-t-4 border-blue-700 mt-12"
+    >
+      <div class="flex flex-col items-center">
+        <span class="mb-2">Redes Sociais</span>
+        <div class="flex">
+          <img
+            src="/assets/icons-footer/Facebook F.svg"
+            alt="Facebook"
+            class="w-8 h-8 mr-2"
+          />
+          <img
+            src="/assets/icons-footer/Instagram.svg"
+            alt="Instagram"
+            class="w-8 h-8 mr-2"
+          />
+          <img
+            src="/assets/icons-footer/YouTube.svg"
+            alt="YouTube"
+            class="w-8 h-8 mr-2"
+          />
+          <img
+            src="/assets/icons-footer/TikTok.svg"
+            alt="TikTok"
+            class="w-8 h-8 mr-2"
+          />
+        </div>
+      </div>
+      <div class="flex items-center">
+        <img src="/assets/logo-techno.svg" alt="TECHNO" class="w-24" />
+      </div>
+      <div class="flex flex-col items-center">
+        <span class="mb-2">Meios de Pagamento</span>
+        <div class="flex">
+          <img
+            src="/assets/icons-footer/visa.svg"
+            alt="Visa"
+            class="w-8 h-8 mr-2"
+          />
+          <img
+            src="/assets/icons-footer/mastercard.svg"
+            alt="Mastercard"
+            class="w-8 h-8 mr-2"
+          />
+          <img
+            src="/assets/icons-footer/elo.svg"
+            alt="Elo"
+            class="w-8 h-8 mr-2"
+          />
+          <img
+            src="/assets/icons-footer/hipercard.svg"
+            alt="Hipercard"
+            class="w-8 h-8 mr-2"
+          />
+          <img
+            src="/assets/icons-footer/pix.svg"
+            alt="Pix"
+            class="w-8 h-8 mr-2"
+          />
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <script src="../scripts/index.js"></script>
+</html>

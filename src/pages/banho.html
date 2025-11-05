@@ -10,60 +10,154 @@
     <link rel="stylesheet" href="../styles/input.css">
     <link rel="stylesheet" href="../styles/carrossel.css">
     <link rel="stylesheet" href="../../node_modules/swiper/swiper-bundle.css" />
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
-    </style>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link
+      rel="shortcut icon"
+      href="../../assets/favicon.ico.png"
+      type="image/x-icon"
+    />
 </head>
 
 <body class="flex flex-col font-lato focus:outline-none">
-     <!--HEADER-->
-  <header class="w-full border-b-4 border-blue-700 py-12 flex-col flex paddingDosLados">
-    <!--LOGO + BARRA DE PESQUISA-->
-    <div class="w-full flex items-center gap-4 justify-between">
-      <a href="./index.html" class=""><img src="../../assets/logo.png" alt="" class="w-[250px]"></a>
-      <!--BARRA DE PESQUISA-->
-      <div class="h-[40px] w-full flex items-center border-2 rounded-md bg-white gap-3 px-[1rem] max-w-[600px]">
-        <img src="../../assets/icons/search.png" alt="" class="w-auto h-[35px] min-h-[35px]">
-        <input type="text" class="h-full w-full focus:outline-none text-[1.1rem]"
-          placeholder="O que seu bichano precisa?">
-      </div>
+    <!--HEADER-->
+    <header
+      class="w-full border-b-4 border-blue-700 p-6 flex-col flex paddingDosLados max-w-[1700px] mx-auto"
+    >
+      <!--LOGO + BARRA DE PESQUISA-->
+      <div class="w-full flex items-center gap-4 justify-between max-cel:flex-col max-cel:scale-90">
+        <a href="./index.html" class=""
+          ><img src="../../assets/logo.png" alt="" class="w-[250px]"
+        /></a>
+        <!--BARRA DE PESQUISA-->
+        <div
+          class="h-[40px] w-full flex items-center border-2 rounded-md bg-white gap-3 px-[1rem] max-w-[600px]"
+           
+        >
+          <img
+            src="../../assets/icons/search.png"
+            alt=""
+            class="w-auto h-[35px] min-h-[35px]"
+          />
+          <input
+            type="text"
+            class="h-full w-full focus:outline-none text-[1.0rem]"
+            placeholder="O que seu bichano precisa?"
+          />
+        </div>
 
-      <div class="flex items-center gap-4">
-        <a href=""><img src="../../assets/icons/Phone.svg" alt="" class="icon w-8 h-8"></a>
-        <a href=""><img src="../../assets/icons/Favorite.svg" alt="" class="icon w-8 h-8"></a>
-        <a href=""><img src="../../assets/icons/cesta.svg" alt="" class="icon w-8 h-8"></a>
+        <div class="flex items-center gap-4">
+          <a href=""
+            ><img
+              src="../../assets/icons/Phone.svg"
+              alt=""
+              class="icon w-8 h-8"
+          /></a>
+          <a href=""
+            ><img
+              src="../../assets/icons/Favorite.svg"
+              alt=""
+              class="icon w-8 h-8"
+          /></a>
+          <a href=""
+            ><img
+              src="../../assets/icons/cesta.svg"
+              alt=""
+              class="icon w-8 h-8"
+          /></a>
+        </div>
       </div>
-    </div>
-    <!--FIM LOGO + BARRA DE PESQUISA-->
+      <!--FIM LOGO + BARRA DE PESQUISA-->
 
-    <!--NavLinks + Contatos-->
-    <nav class="w-full flex items-center justify-between mt-8 p-2" id="NavLinks">
-      <ul class="flex gap-12  font-bold">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="cachorro.html">Cães</a></li>
-        <li><a href="gato.html">Gatos</a></li>
-        <li><a href="#">Sobre nós</a></li>
-      </ul>
-      <ul class="flex items-center gap-12 font-bold">
-        <li><a href="">Login</a></li>
-        <li><a href="">Cadastro</a></li>
-      </ul>
-    </nav>
-    <!--FIM NavLinks + Contatos-->
-  </header>
-  <!--FIM HEADER-->
+      <!--NavLinks + Contatos-->
+      <nav
+        class="w-full flex items-center justify-between mt-8 p-2 max-cel:p-0 max-cel:justify-center"
+        id="NavLinks"
+      >
+        <!--NAV LINKS-->
+        <ul class="flex gap-4 items-center">
+          <!--ITEM NAV-->
+          <div class="flex items-center h-10 gap-2">
+            <img
+              src="../../assets/icons8-casa.svg"
+              alt=""
+              class="h-7 w-7 opacity-0 max-cel:hidden"
+              id="home-icon"
+            />
+            <a href="../pages/index.html" class="font-semibold" id="linkHome"
+              >Home</a
+            >
+          </div>
+          <!--ITEM NAV-->
+          <div class="flex items-center h-10 gap-2">
+            <img
+              src="../../assets/caozin.png"
+              alt=""
+              class="h-10 w-10 opacity-0 max-cel:hidden"
+              id="cachorro-icon"
+            />
+            <a
+              href="../pages/cachorro.html"
+              class="font-semibold"
+              id="linkCachorro"
+              >Cães</a
+            >
+          </div>
+          <!--ITEM NAV-->
+          <div class="flex items-center h-10 gap-2">
+            <img
+              src="../../assets/gatin.png"
+              alt=""
+              class="h-10 w-10 opacity-0 max-cel:hidden"
+              id="gato-icon"
+            />
+            <a href="../pages/gato.html" class="font-semibold" id="linkGato"
+              >Gatos</a
+            >
+          </div>
+          <!--ITEM NAV-->
+          <div class="flex items-center h-10 gap-2">
+            <img
+              src="../../assets/info.svg"
+              alt=""
+              class="opacity-0 h-5 w-5 max-cel:hidden"
+              id="sobre-icon"
+            />
+            <a href="../pages/sobre.html" class="font-semibold" id="linkSobre"
+              >Sobre Nós</a
+            >
+          </div>
+        </ul>
+        <ul class="flex gap-7 font-semibold max-cel:hidden">
+          <li><a href="./login/index.html">Cadastro</a></li>
+          <li><a href="./login/index.html">Login</a></li>
+        </ul>
+      </nav>
+      <!--FIM NavLinks + Contatos-->
+    </header>
+    <!--FIM HEADER-->
     <main class="content mx-auto p-8">
-
-        <section class="w-full mt-12 bg-white shadow-md rounded-lg p-8 flex items-center justify-between">
+      <section class="justify-center w-full flex gap-12 mt-12 max-cel:flex-col max-cel:items-center">
+        <a href="./planovet.html">
+          <li class="item">Planos Veterinários</li>
+        </a>
+        <a href="./adestramento.html">
+          <li class="item">Adestramento</li>
+        </a>
+        <a href="./banho.html">
+          <li class="item">Banho e Tosa</li>
+        </a>
+        <a href="./box.html">
+          <li class="item">Box Bichanos</li>
+        </a>
+      </section>
+        <section data-aos="fade-right" data-aos-delay="300" class="w-full mt-12 bg-white shadow-md rounded-lg p-8 flex items-center justify-between">
             <div class="flex flex-col">
                 <h1 class="text-4xl font-lilita text-blue-700 mb-4">BANHO & TOSA</h1>
                 <h2 class="text-2xl font-bold mb-2">O cuidado que seu bichano merece!</h2>
                 <p class="mb-4">Serviços completos e seguros para a higiene <br> do seu melhor amigo.</p>
-                <a href="https://puroafeto.com/" target="_blank"
+                <a data-aos="zoom-in" data-aos-delay="500" href="https://puroafeto.com/" target="_blank"
                     class="inline-flex items-center px-4 py-2 w-[50%] bg-blue-300 font-bold rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105">
-                    <img src="/assets/banho/cachorro.svg" alt="Icone de cachorro"
-                        class="w-8 h-8 mr-2 transform transition-transform duration-300 hover:scale-110"> Agendar &rarr;
+                    <img src="/assets/banho/cachorro.svg" alt="Icone de cachorro" class="w-8 h-8 mr-2 transform transition-transform duration-300 hover:scale-110"> Agendar &rarr;
                 </a>
             </div>
             <img src="/assets/banho/img1.png" alt="Cachorro no banho"
@@ -71,30 +165,30 @@
         </section>
         <section class="mt-12 rounded-lg p-8 flex items-center justify-center">
             <div class="flex items-center gap-0 relative">
-              <img src="/assets/banho/img2.png" alt="Cachorro no banho" class="rounded-lg transform transition-transform duration-300 hover:scale-105 h-[260px]">
-              <div class="flex flex-col bg-yellow-100 p-6 rounded-lg w-[330px] h-auto">
+              <img data-aos="fade-right" data-aos-delay="300" src="/assets/banho/img2.png" alt="Cachorro no banho" class="rounded-lg transform transition-transform duration-300 hover:scale-105 h-[260px]">
+              <div data-aos="fade-right" data-aos-delay="400" class="flex flex-col bg-yellow-100 p-6 rounded-lg w-[330px] h-auto">
                 <h2 class="text-2xl font-bold mb-4">Etapas do Banho</h2>
                 <ol class="list-decimal list-inside">
-                  <li>Banho</li>
-                  <li>Secagem</li>
-                  <li>Escova na pelagem</li>
-                  <li>Limpeza dos ouvidos</li>
-                  <li>Corte de Unhas</li>
+                  <li data-aos="fade-up" data-aos-delay="500">Banho</li>
+                  <li data-aos="fade-up" data-aos-delay="550">Secagem</li>
+                  <li data-aos="fade-up" data-aos-delay="600">Escova na pelagem</li>
+                  <li data-aos="fade-up" data-aos-delay="650">Limpeza dos ouvidos</li>
+                  <li data-aos="fade-up" data-aos-delay="700">Corte de Unhas</li>
                 </ol>
-                <img src="../../assets/banho/agua.png" alt="Espirro de água" class="absolute bottom-0 right-0 w-16 h-16 transform transition-transform duration-300 hover:scale-105">
+                <img data-aos="zoom-in" data-aos-delay="700" src="../../assets/banho/agua.png" alt="Espirro de água" class="absolute bottom-0 right-0 w-16 h-16 transform transition-transform duration-300 hover:scale-105">
               </div>
             </div>
           </section>
-          <section class="flex items-center ml-8">
+          <section data-aos="fade-right" data-aos-delay="300" class="flex items-center justify-center">
             <img src="/assets/banho/info.svg" alt="Informação" class="w-4 h-4 mr-2">
             <p class="text-gray-700">Para tranquilizar filhotes, gatos e pets idosos, os tutores precisam acompanhar os serviços em loja.</p>
           </section>
         <div class="flex justify-center space-x-20 mt-20">
             <!-- Cartão de Desconto 20% OFF -->
-            <div class="flex items-center bg-gray-100 p-4 rounded-lg transform transition-transform duration-300 hover:scale-110">
+            <div data-aos="zoom-in" data-aos-delay="300" class="flex items-center bg-gray-100 p-4 rounded-lg transform transition-transform duration-300 hover:scale-110">
               <div class="bg-blue-200 text-blue-700 font-bold text-center p-4 rounded-lg font-lilita transform transition-transform duration-300 hover:scale-105">
-                <span class="block text-3xl">20%</span>
-                <span class="block text-xl">OFF</span>
+                <span class="block text-3xl font-lilita">20%</span>
+                <span class="block text-xl font-lilita">OFF</span>
               </div>
               <div class="ml-4">
                 <span class="block font-bold">no pacote de</span>
@@ -103,10 +197,10 @@
               </div>
             </div>
             <!-- Cartão de Desconto 15% OFF -->
-            <div class="flex items-center bg-gray-100 p-4 rounded-lg transform transition-transform duration-300 hover:scale-110">
+            <div data-aos="zoom-in" data-aos-delay="300" class="flex items-center bg-gray-100 p-4 rounded-lg transform transition-transform duration-300 hover:scale-110">
               <div class="bg-blue-200 text-blue-700 font-bold text-center p-4 rounded-lg font-lilita transform transition-transform duration-300 hover:scale-105">
-                <span class="block text-3xl">15%</span>
-                <span class="block text-xl">OFF</span>
+                <span class="block text-3xl font-lilita">15%</span>
+                <span class="block text-xl font-lilita">OFF</span>
               </div>
               <div class="ml-4">
                 <span class="block font-bold">em todos os serviços para</span>
@@ -114,11 +208,11 @@
               </div>
             </div>
           </div>
-          <section class="bg-yellow-100 p-8 rounded-lg mt-20">
-            <h2 class="text-2xl font-bold mb-6">Dúvidas Frequentes</h2>
+          <section data-aos="fade-up" data-aos-delay="300" class="bg-yellow-100 p-8 rounded-lg mt-20">
+            <h2 data-aos="fade-up" data-aos-delay="350" class="text-2xl font-bold mb-6">Dúvidas Frequentes</h2>
             <div class="space-y-4">
             <!-- Pergunta 1 -->
-            <div class="border-b border-gray-400 py-4">
+            <div data-aos="fade-up" data-aos-delay="400" class="border-b border-gray-400 py-4">
             <input type="checkbox" id="question-1" class="hidden">
             <label for="question-1" class="flex justify-between items-center cursor-pointer">
                 <span class="text-lg font-medium">Como funciona a triagem antes do atendimento?</span>
@@ -129,7 +223,7 @@
             </div>
             </div>
             <!-- Pergunta 2 -->
-            <div class="border-b border-gray-400 py-4">
+            <div data-aos="fade-up" data-aos-delay="450" class="border-b border-gray-400 py-4">
             <input type="checkbox" id="question-2" class="hidden">
             <label for="question-2" class="flex justify-between items-center cursor-pointer">
                 <span class="text-lg font-medium">O que fazer para cancelar meu agendamento?</span>
@@ -140,7 +234,7 @@
             </div>
             </div>
             <!-- Pergunta 3 -->
-            <div class="border-b border-gray-400 py-4">
+            <div data-aos="fade-up" data-aos-delay="500" class="border-b border-gray-400 py-4">
             <input type="checkbox" id="question-3" class="hidden">
             <label for="question-3" class="flex justify-between items-center cursor-pointer">
                 <span class="text-lg font-medium">Quais serviços estão inclusos no banho?</span>
@@ -151,7 +245,7 @@
             </div>
             </div>
             <!-- Pergunta 4 -->
-            <div class="border-b border-gray-400 py-4">
+            <div data-aos="fade-up" data-aos-delay="550" class="border-b border-gray-400 py-4 ">
             <input type="checkbox" id="question-4" class="hidden">
             <label for="question-4" class="flex justify-between items-center cursor-pointer">
                 <span class="text-lg font-medium">Todos os portes são aceitos?</span>
@@ -189,23 +283,32 @@
       </footer>
 </body>
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="../scripts/index.js"></script>
 <script>
-    document.querySelectorAll('input[type="checkbox"]').forEach((checkbox) => {
-      checkbox.addEventListener('change', function() {
-        document.querySelectorAll('input[type="checkbox"]').forEach((cb) => {
-          if (cb !== checkbox) {
-            cb.checked = false;
-          }
-        });
-        document.querySelectorAll('.answer').forEach((answer) => {
-          answer.classList.add('hidden');
-        });
-        if (checkbox.checked) {
-          const answerId = checkbox.id.replace('question', 'answer');
-          document.getElementById(answerId).classList.remove('hidden');
+  document.querySelectorAll('input[type="checkbox"]').forEach((checkbox) => {
+    checkbox.addEventListener('change', function() {
+      document.querySelectorAll('input[type="checkbox"]').forEach((cb) => {
+        if (cb !== checkbox) {
+          cb.checked = false;
+          const otherAnswerId = cb.id.replace('question', 'answer');
+          document.getElementById(otherAnswerId).classList.add('hidden');
         }
       });
+      const answerId = checkbox.id.replace('question', 'answer');
+      if (checkbox.checked) {
+        document.getElementById(answerId).classList.remove('hidden');
+      } else {
+        document.getElementById(answerId).classList.add('hidden');
+      }
     });
+  });
+
+  
+  AOS.init({
+    once: true // this will ensure animations trigger only once
+  });
+
   </script>
 
 </html>
